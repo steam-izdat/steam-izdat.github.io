@@ -1,11 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="STEAMиздат">
-  <!-- штамп-рамка -->
-  <rect x="5" y="5" width="54" height="54" rx="4" fill="none" stroke="#f3ecda" stroke-width="3"/>
-  <rect x="10.5" y="10.5" width="43" height="43" rx="2" fill="none" stroke="#f3ecda" stroke-width="1.4" opacity="0.55"/>
+  <!-- рамка -->
+  <rect x="5" y="5" width="54" height="54" rx="4" fill="none" stroke="#c7d5e0" stroke-width="3"/>
+  <rect x="10.5" y="10.5" width="43" height="43" rx="2" fill="none" stroke="#c7d5e0" stroke-width="1.4" opacity="0.5"/>
   <!-- картридж-выемка сверху -->
-  <rect x="24" y="3" width="16" height="6" rx="1.5" fill="#17130c" stroke="#f3ecda" stroke-width="2"/>
-  <!-- play-треугольник (Steam/игры), vermilion -->
-  <path d="M26 21 L46 32 L26 43 Z" fill="#f1592f"/>
-  <!-- штамп-«галочка» актуальности -->
-  <path d="M19 33.5 L23.5 38 L29 30.5" fill="none" stroke="#f3ecda" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.0"/>
+  <rect x="24" y="3" width="16" height="6" rx="1.5" fill="#15202c" stroke="#c7d5e0" stroke-width="2"/>
+  <!-- play-треугольник (Steam/игры), Steam-голубой -->
+  <path d="M26 21 L46 32 L26 43 Z" fill="#66c0f4"/>
 </svg>

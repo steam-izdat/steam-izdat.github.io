@@ -1,91 +1,98 @@
 /* ============================================================================
-   STEAMиздат — арт-дирекшн «самиздат / полевой мануал для шиппинга в Steam»
-   Рамка: самопальный полевой справочник, который инди держит открытым, пока шиппит.
+   STEAMиздат — арт-дирекшн «Steam-клиент / ПК-гейминг»
+   Рамка: интерфейс площадки Steam — где инди шиппит игру.
    Сфера: Тренажёр — плотная читаемая инфа, жёсткая иерархия, статус-штампы.
-   Палитра: бумага + тушь + ОДИН острый акцент (vermilion-штамп). Без индиго, без стекла.
-   Шрифты: Oswald (штамп-заголовки) · Lora (тело) · JetBrains Mono (реквизиты/код/бейджи).
+   Палитра: тёмно-синий Steam + сталь + Steam-голубой акцент + Steam-зелёная кнопка.
+            Красный — только для опасного (санкции/предупреждения).
+   Шрифты: Oswald (заголовки) · IBM Plex Sans (тело) · JetBrains Mono (реквизиты/код/бейджи).
    ========================================================================== */
 
-/* ---------- СВЕТЛАЯ СХЕМА: «бумага» (поверх Material default) -------------- */
+/* ---------- СВЕТЛАЯ СХЕМА: «Steam-светлая» (поверх Material default) ------- */
 [data-md-color-scheme="default"] {
-  color-scheme: light;   /* отключает Chrome auto-dark, чтобы бумагу не инвертировало */
-  --izd-paper:      #f3ecda;
-  --izd-paper-2:    #ebe2cb;
-  --izd-paper-3:    #e2d7ba;
-  --izd-ink:        #211c15;
-  --izd-ink-soft:   #5f5746;
-  --izd-line:       #cbbc99;
-  --izd-vermilion:  #d23a1d;
-  --izd-vermilion-soft: rgba(210, 58, 29, 0.10);
-  --izd-ok:         #356b30;
+  color-scheme: light;
+  --izd-paper:      #eef2f7;
+  --izd-paper-2:    #e1e8f1;
+  --izd-paper-3:    #d2dcea;
+  --izd-ink:        #16202d;
+  --izd-ink-soft:   #4a5a6b;
+  --izd-line:       #c2cedd;
+  --izd-accent:     #1668c0;            /* Steam-синий, читаемый на светлом */
+  --izd-accent-soft: rgba(22, 104, 192, 0.09);
+  --izd-green:      #4c7a1b;            /* Steam-зелёная кнопка */
+  --izd-ok:         #3c7a2a;
+  --izd-danger:     #c2392b;
+  --izd-danger-soft: rgba(194, 57, 43, 0.10);
   --izd-amber:      #9a6516;
-  --izd-hl:         #f4d64e;
+  --izd-hl:         #ffe066;
 
   --md-default-bg-color:        var(--izd-paper);
   --md-default-fg-color:        var(--izd-ink);
   --md-default-fg-color--light: var(--izd-ink-soft);
-  --md-default-fg-color--lighter: #8a8068;
+  --md-default-fg-color--lighter: #7689a0;
   --md-default-fg-color--lightest: var(--izd-line);
 
-  --md-primary-fg-color:        #1b1710;
-  --md-primary-fg-color--light: #2c261c;
-  --md-primary-fg-color--dark:  #120f0a;
-  --md-primary-bg-color:        #f3ecda;
-  --md-primary-bg-color--light: #d8cdab;
+  --md-primary-fg-color:        #1b2838;   /* шапка — тёмно-синий Steam */
+  --md-primary-fg-color--light: #2a475e;
+  --md-primary-fg-color--dark:  #15202c;
+  --md-primary-bg-color:        #e6edf3;
+  --md-primary-bg-color--light: #9fb2c6;
 
-  --md-accent-fg-color:         var(--izd-vermilion);
-  --md-accent-fg-color--transparent: var(--izd-vermilion-soft);
+  --md-accent-fg-color:         var(--izd-accent);
+  --md-accent-fg-color--transparent: var(--izd-accent-soft);
 
-  --md-typeset-a-color:         #b53217;
-  --md-code-bg-color:           #ece2c7;
-  --md-code-fg-color:           #43321f;
+  --md-typeset-a-color:         var(--izd-accent);
+  --md-code-bg-color:           #e4ebf4;
+  --md-code-fg-color:           #1c3d5a;
 
-  --md-footer-bg-color:         #1b1710;
-  --md-footer-bg-color--dark:   #120f0a;
+  --md-footer-bg-color:         #1b2838;
+  --md-footer-bg-color--dark:   #15202c;
 }
 
-/* ---------- ТЁМНАЯ СХЕМА: «оператор / тёплая консоль» (поверх Material slate) */
+/* ---------- ТЁМНАЯ СХЕМА: «Steam-клиент» (поверх Material slate) ----------- */
 [data-md-color-scheme="slate"] {
   color-scheme: dark;
-  --izd-paper:      #17130c;
-  --izd-paper-2:    #211b11;
-  --izd-paper-3:    #2c2417;
-  --izd-ink:        #eaddc0;
-  --izd-ink-soft:   #b3a384;
-  --izd-line:       #3c3322;
-  --izd-vermilion:  #f1592f;
-  --izd-vermilion-soft: rgba(241, 89, 47, 0.14);
-  --izd-ok:         #74b35f;
-  --izd-amber:      #d99b3c;
-  --izd-hl:         #d8b63a;
+  --izd-paper:      #1b2838;            /* основной тёмно-синий Steam */
+  --izd-paper-2:    #223347;
+  --izd-paper-3:    #2a475e;            /* стальная панель Steam */
+  --izd-ink:        #c7d5e0;            /* светлый текст Steam */
+  --izd-ink-soft:   #8a9aa9;
+  --izd-line:       #34506a;
+  --izd-accent:     #66c0f4;            /* яркий Steam-голубой */
+  --izd-accent-soft: rgba(102, 192, 244, 0.13);
+  --izd-green:      #6aab1f;
+  --izd-ok:         #8bc53f;
+  --izd-danger:     #ff6a5e;
+  --izd-danger-soft: rgba(255, 106, 94, 0.15);
+  --izd-amber:      #e0a13a;
+  --izd-hl:         #e6cf52;
 
   --md-default-bg-color:        var(--izd-paper);
   --md-default-fg-color:        var(--izd-ink);
   --md-default-fg-color--light: var(--izd-ink-soft);
-  --md-default-fg-color--lighter: #8d7e60;
-  --md-default-fg-color--lightest: #4a4029;
+  --md-default-fg-color--lighter: #6b7d8d;
+  --md-default-fg-color--lightest: #2f4a62;
 
-  --md-primary-fg-color:        #100d08;
-  --md-primary-fg-color--light: #201a11;
-  --md-primary-fg-color--dark:  #0a0805;
-  --md-primary-bg-color:        #eaddc0;
-  --md-primary-bg-color--light: #b3a384;
+  --md-primary-fg-color:        #15202c;
+  --md-primary-fg-color--light: #2a475e;
+  --md-primary-fg-color--dark:  #0e1822;
+  --md-primary-bg-color:        #c7d5e0;
+  --md-primary-bg-color--light: #8a9aa9;
 
-  --md-accent-fg-color:         var(--izd-vermilion);
-  --md-accent-fg-color--transparent: var(--izd-vermilion-soft);
+  --md-accent-fg-color:         var(--izd-accent);
+  --md-accent-fg-color--transparent: var(--izd-accent-soft);
 
-  --md-typeset-a-color:         #f4805e;
-  --md-code-bg-color:           #221b11;
-  --md-code-fg-color:           #e3d3b0;
+  --md-typeset-a-color:         var(--izd-accent);
+  --md-code-bg-color:           #16212e;
+  --md-code-fg-color:           #a9c7dd;
 
-  --md-footer-bg-color:         #100d08;
-  --md-footer-bg-color--dark:   #0a0805;
+  --md-footer-bg-color:         #15202c;
+  --md-footer-bg-color--dark:   #0e1822;
 }
 
 /* ---------- ШРИФТЫ -------------------------------------------------------- */
 :root {
   --izd-display: "Oswald", "PT Sans Narrow", system-ui, sans-serif;
-  --izd-body: "Lora", Georgia, "Times New Roman", serif;
+  --izd-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --izd-mono: "JetBrains Mono", "SF Mono", ui-monospace, monospace;
   --md-text-font-family: var(--izd-body);
   --md-code-font-family: var(--izd-mono);
@@ -97,11 +104,11 @@ body, .md-typeset {
 }
 
 .md-typeset {
-  font-size: 0.84rem;
-  line-height: 1.72;
+  font-size: 0.82rem;
+  line-height: 1.7;
 }
 
-/* Заголовки — штамп: Oswald, капитель, разрядка, жёстко */
+/* Заголовки — Oswald, капитель, разрядка */
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3,
@@ -122,7 +129,7 @@ body, .md-typeset {
   color: var(--izd-ink);
   margin: 0 0 0.7em;
   padding-bottom: 0.35rem;
-  border-bottom: 3px solid var(--izd-ink);
+  border-bottom: 3px solid var(--izd-accent);
 }
 
 .md-typeset h2 {
@@ -137,37 +144,35 @@ body, .md-typeset {
 .md-typeset h3 { font-size: 1.08rem; letter-spacing: 0.015em; }
 .md-typeset h4 { font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--izd-ink-soft); }
 
-/* Якорь-пермалинк — vermilion */
+/* Якорь-пермалинк — Steam-голубой */
 .md-typeset .headerlink { color: var(--izd-line); }
-.md-typeset :hover > .headerlink { color: var(--izd-vermilion); }
+.md-typeset :hover > .headerlink { color: var(--izd-accent); }
 
-/* Ссылки — тушь с vermilion-подчёркиванием, наведение — vermilion */
+/* Ссылки — Steam-голубой (форсим свой акцент, чтобы Material slate не перебивал) */
 .md-typeset a {
-  color: var(--md-typeset-a-color);
-  text-decoration-color: var(--izd-vermilion);
+  color: var(--izd-accent);
+  text-decoration-color: var(--izd-accent);
   text-underline-offset: 0.18em;
   text-decoration-thickness: 1px;
 }
-.md-typeset a:hover { color: var(--izd-vermilion); text-decoration-thickness: 2px; }
+.md-typeset a:hover { color: var(--izd-accent); text-decoration-thickness: 2px; }
 
-/* ---------- ШАПКА: штампованный заголовок мануала ------------------------- */
-.md-header { border-bottom: 3px solid var(--izd-vermilion); }
+/* ---------- ШАПКА: тёмно-синяя панель Steam ------------------------------ */
+.md-header { border-bottom: 3px solid var(--izd-accent); }
 .md-header__title { text-transform: uppercase; letter-spacing: 0.12em; font-weight: 700; }
 .md-tabs { border-bottom: 1px solid rgba(0,0,0,.25); }
 
-/* ---------- НАВИГАЦИЯ: индекс-папка справочника --------------------------- */
+/* ---------- НАВИГАЦИЯ ----------------------------------------------------- */
 .md-nav { font-family: var(--izd-display); font-size: 0.74rem; letter-spacing: 0.01em; }
-.md-nav__item .md-nav__link--active { color: var(--izd-vermilion); font-weight: 600; }
+.md-nav__item .md-nav__link--active { color: var(--izd-accent); font-weight: 600; }
 .md-nav__title { text-transform: uppercase; letter-spacing: 0.08em; }
 
-/* активный пункт — штампованная метка слева */
 .md-nav__link--active::before {
   content: "▸ ";
-  color: var(--izd-vermilion);
+  color: var(--izd-accent);
   font-weight: 700;
 }
 
-/* правый TOC */
 .md-sidebar--secondary .md-nav__title { font-size: 0.7rem; }
 
 /* ---------- ВЫНОСНЫЕ БЛОКИ (бывшие Notion-callout'ы) ---------------------- */
@@ -183,7 +188,7 @@ body, .md-typeset {
 .md-typeset .cl > :first-child { margin-top: 0; }
 .md-typeset .cl > :last-child { margin-bottom: 0; }
 
-/* мини-штамп-ярлык в правом верхнем углу */
+/* мини-ярлык в правом верхнем углу */
 .md-typeset .cl::before {
   position: absolute;
   top: -0.62rem;
@@ -199,29 +204,29 @@ body, .md-typeset {
   border-radius: 2px;
 }
 
-.md-typeset .cl-note  { border-left-color: var(--izd-ink-soft); }
-.md-typeset .cl-note::before  { content: "заметка"; color: var(--izd-ink-soft); }
+.md-typeset .cl-note  { border-left-color: var(--izd-accent); }
+.md-typeset .cl-note::before  { content: "заметка"; color: var(--izd-accent); }
 
 .md-typeset .cl-tip   { border-left-color: var(--izd-ok); }
 .md-typeset .cl-tip::before   { content: "совет"; color: var(--izd-ok); }
 
-.md-typeset .cl-warn  { border-left-color: var(--izd-vermilion); background: var(--izd-vermilion-soft); }
-.md-typeset .cl-warn::before  { content: "внимание"; color: var(--izd-vermilion); }
+.md-typeset .cl-warn  { border-left-color: var(--izd-danger); background: var(--izd-danger-soft); }
+.md-typeset .cl-warn::before  { content: "внимание"; color: var(--izd-danger); }
 
 /* «опасный» блок — диагональная штриховка сверху (для санкций и т.п.) */
 .md-typeset .cl-danger {
-  border: 2px solid var(--izd-vermilion);
+  border: 2px solid var(--izd-danger);
   border-left-width: 4px;
-  background: var(--izd-vermilion-soft);
+  background: var(--izd-danger-soft);
 }
-.md-typeset .cl-danger::before { content: "стоп"; color: var(--izd-vermilion); }
+.md-typeset .cl-danger::before { content: "стоп"; color: var(--izd-danger); }
 .md-typeset .cl-danger::after {
   content: "";
   position: absolute;
   inset: 0 0 auto 0;
   height: 5px;
   background: repeating-linear-gradient(45deg,
-    var(--izd-vermilion) 0 8px, transparent 8px 16px);
+    var(--izd-danger) 0 8px, transparent 8px 16px);
   opacity: 0.85;
 }
 
@@ -241,22 +246,20 @@ body, .md-typeset {
   vertical-align: middle;
 }
 .md-typeset .stamp--ok    { color: var(--izd-ok); }
-.md-typeset .stamp--warn  { color: var(--izd-vermilion); border-style: double; border-width: 3px; }
+.md-typeset .stamp--warn  { color: var(--izd-danger); border-style: double; border-width: 3px; }
 .md-typeset .stamp--check { color: var(--izd-amber); border-style: dashed; }
 .md-typeset .stamp--date  { color: var(--izd-ink-soft); transform: none; }
 
 /* ---------- ЦВЕТНОЙ ИНЛАЙН (бывшие span color) --------------------------- */
-.md-typeset .ink-red { color: var(--izd-vermilion); font-weight: 600; }
+.md-typeset .ink-red { color: var(--izd-danger); font-weight: 600; }
 .md-typeset .hl {
   background: linear-gradient(transparent 55%, var(--izd-hl) 55% 92%, transparent 92%);
+  color: #16202d;                       /* тёмный текст на жёлтом маркере в обеих темах */
   padding: 0 0.1em;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-/* ---------- КОД / РЕКВИЗИТЫ: «терминальный» блок ------------------------- */
-.md-typeset pre > code {
-  border-left: 3px solid var(--izd-vermilion);
-}
+/* ---------- КОД / РЕКВИЗИТЫ ---------------------------------------------- */
 .md-typeset code {
   font-family: var(--izd-mono);
   font-size: 0.78em;
@@ -264,9 +267,9 @@ body, .md-typeset {
   border-radius: 2px;
   padding: 0.05em 0.32em;
 }
-.md-typeset pre > code { border: none; border-left: 3px solid var(--izd-vermilion); }
+.md-typeset pre > code { border: none; border-left: 3px solid var(--izd-accent); }
 
-/* ---------- ТАБЛИЦЫ: лист данных ----------------------------------------- */
+/* ---------- ТАБЛИЦЫ ------------------------------------------------------- */
 .md-typeset table:not([class]) {
   border: 1px solid var(--izd-line);
   font-size: 0.78rem;
@@ -278,12 +281,12 @@ body, .md-typeset {
   font-weight: 600;
   background: var(--izd-paper-3);
   color: var(--izd-ink);
-  border-bottom: 2px solid var(--izd-ink-soft);
+  border-bottom: 2px solid var(--izd-accent);
 }
 .md-typeset table:not([class]) td { border-top: 1px solid var(--izd-line); }
-.md-typeset table:not([class]) tr:hover td { background: var(--izd-vermilion-soft); }
+.md-typeset table:not([class]) tr:hover td { background: var(--izd-accent-soft); }
 
-/* ---------- ГОРИЗОНТАЛЬНЫЕ ЛИНЕЙКИ — как разделы мануала ------------------ */
+/* ---------- ЛИНЕЙКИ ------------------------------------------------------- */
 .md-typeset hr {
   border: none;
   border-top: 1px solid var(--izd-line);
@@ -292,19 +295,19 @@ body, .md-typeset {
 
 /* ---------- ЦИТАТЫ -------------------------------------------------------- */
 .md-typeset blockquote {
-  border-left: 3px solid var(--izd-vermilion);
+  border-left: 3px solid var(--izd-accent);
   color: var(--izd-ink-soft);
   font-style: italic;
 }
 
 /* ============================================================================
-   ОБЛОЖКА (главная) — титул полевого мануала
+   ОБЛОЖКА (главная)
    ========================================================================== */
 .izd-cover {
   margin: 0.5rem 0 1.6rem;
   padding: 1.6rem 1.5rem;
   border: 1px solid var(--izd-line);
-  border-left: 5px solid var(--izd-vermilion);
+  border-left: 5px solid var(--izd-accent);
   background: var(--izd-paper-2);
   position: relative;
 }
@@ -313,7 +316,7 @@ body, .md-typeset {
   font-size: 0.66rem;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: var(--izd-vermilion);
+  color: var(--izd-accent);
   margin: 0 0 0.4rem;
 }
 .md-typeset .izd-cover h1 {
@@ -326,32 +329,32 @@ body, .md-typeset {
   font-size: 1.0rem;
   line-height: 1.55;
   color: var(--izd-ink);
-  max-width: 46ch;
+  max-width: 48ch;
   margin: 0 0 1.1rem;
 }
 
-/* CTA-кнопка (Telegram-сообщество) — штамп */
+/* CTA-кнопка (Telegram-сообщество) — Steam-зелёная кнопка действия */
 .md-typeset .izd-cta {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 1.05rem;
+  padding: 0.55rem 1.1rem;
   font-family: var(--izd-display);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-weight: 600;
   font-size: 0.82rem;
-  color: #fff2e8;
-  background: var(--izd-vermilion);
-  border: 2px solid var(--izd-vermilion);
+  color: #ffffff;
+  background: var(--izd-green);
+  border: 2px solid var(--izd-green);
   border-radius: 2px;
   text-decoration: none;
-  transition: background 0.12s, color 0.12s;
+  transition: filter 0.12s;
 }
-.md-typeset .izd-cta:hover { background: transparent; color: var(--izd-vermilion); }
+.md-typeset .izd-cta:hover { filter: brightness(1.12); color: #ffffff; }
 .md-typeset .izd-cta svg { width: 1.05rem; height: 1.05rem; fill: currentColor; }
 
-/* индекс разделов — опись мануала с плоскими монохромными иконками */
+/* индекс разделов — плоские монохромные иконки */
 .izd-index { margin: 1.2rem 0; }
 .md-typeset .izd-index ul { list-style: none; margin: 0; padding: 0; }
 .md-typeset .izd-index li {
@@ -364,7 +367,7 @@ body, .md-typeset {
   margin: 0;
   transition: background 0.1s;
 }
-.md-typeset .izd-index li:hover { background: var(--izd-vermilion-soft); }
+.md-typeset .izd-index li:hover { background: var(--izd-accent-soft); }
 .md-typeset .izd-index .izd-ic {
   grid-column: 1;
   grid-row: 1 / span 2;
@@ -375,7 +378,7 @@ body, .md-typeset {
   height: 1.55rem;
   fill: var(--izd-ink-soft);
 }
-.md-typeset .izd-index li:hover .izd-ic svg { fill: var(--izd-vermilion); }
+.md-typeset .izd-index li:hover .izd-ic svg { fill: var(--izd-accent); }
 .md-typeset .izd-index li strong {
   grid-column: 2;
   font-family: var(--izd-display);
@@ -385,10 +388,10 @@ body, .md-typeset {
   font-size: 0.98rem;
 }
 .md-typeset .izd-index li strong a { color: var(--izd-ink); text-decoration: none; }
-.md-typeset .izd-index li:hover strong a { color: var(--izd-vermilion); }
+.md-typeset .izd-index li:hover strong a { color: var(--izd-accent); }
 .md-typeset .izd-index li span { grid-column: 2; color: var(--izd-ink-soft); font-size: 0.78rem; line-height: 1.45; }
 
-/* ---------- МОБИЛЬНОЕ: тело крупнее, обложка компактнее ------------------ */
+/* ---------- МОБИЛЬНОЕ ----------------------------------------------------- */
 @media screen and (max-width: 76.1875em) {
   .md-typeset { font-size: 0.82rem; }
 }
@@ -399,5 +402,5 @@ body, .md-typeset {
   .md-typeset .izd-index li { grid-template-columns: 2rem 1fr; }
 }
 
-/* подвал — моно-подпись редакции */
+/* подвал */
 .md-footer-meta { font-family: var(--izd-mono); font-size: 0.7rem; }
