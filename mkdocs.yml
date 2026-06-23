@@ -28,13 +28,15 @@ theme:
     repo: material/source-branch
     edit: material/pencil-box-outline
   palette:
+    # светлая «бумага» базируется на Material default, тёмная «оператор» — на slate,
+    # чтобы все компоненты (поиск, таблицы, код, сноски) унаследовали корректный свет/тьму
     - media: "(prefers-color-scheme: light)"
-      scheme: izdat-paper
+      scheme: default
       toggle:
         icon: material/weather-night
         name: Ночной режим (для тех, кто чинит билд в 2 ночи)
     - media: "(prefers-color-scheme: dark)"
-      scheme: izdat-ink
+      scheme: slate
       toggle:
         icon: material/weather-sunny
         name: Дневной режим
@@ -76,6 +78,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.emoji:       # плоские монохромные иконки :material-...: (наследуют цвет текста)
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - search:

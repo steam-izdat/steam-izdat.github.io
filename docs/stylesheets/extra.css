@@ -6,8 +6,8 @@
    Шрифты: Oswald (штамп-заголовки) · Lora (тело) · JetBrains Mono (реквизиты/код/бейджи).
    ========================================================================== */
 
-/* ---------- СВЕТЛАЯ СХЕМА: «бумага» --------------------------------------- */
-[data-md-color-scheme="izdat-paper"] {
+/* ---------- СВЕТЛАЯ СХЕМА: «бумага» (поверх Material default) -------------- */
+[data-md-color-scheme="default"] {
   color-scheme: light;   /* отключает Chrome auto-dark, чтобы бумагу не инвертировало */
   --izd-paper:      #f3ecda;
   --izd-paper-2:    #ebe2cb;
@@ -44,8 +44,8 @@
   --md-footer-bg-color--dark:   #120f0a;
 }
 
-/* ---------- ТЁМНАЯ СХЕМА: «оператор / тёплая консоль» --------------------- */
-[data-md-color-scheme="izdat-ink"] {
+/* ---------- ТЁМНАЯ СХЕМА: «оператор / тёплая консоль» (поверх Material slate) */
+[data-md-color-scheme="slate"] {
   color-scheme: dark;
   --izd-paper:      #17130c;
   --izd-paper-2:    #211b11;
@@ -301,12 +301,11 @@ body, .md-typeset {
    ОБЛОЖКА (главная) — титул полевого мануала
    ========================================================================== */
 .izd-cover {
-  margin: 0.5rem 0 2rem;
-  padding: 1.6rem 1.4rem;
-  border: 3px solid var(--izd-ink);
-  background:
-    repeating-linear-gradient(0deg, transparent 0 27px, var(--izd-line) 27px 28px);
-  background-color: var(--izd-paper-2);
+  margin: 0.5rem 0 1.6rem;
+  padding: 1.6rem 1.5rem;
+  border: 1px solid var(--izd-line);
+  border-left: 5px solid var(--izd-vermilion);
+  background: var(--izd-paper-2);
   position: relative;
 }
 .izd-cover__kicker {
@@ -320,41 +319,74 @@ body, .md-typeset {
 .md-typeset .izd-cover h1 {
   border: none;
   font-size: 2.6rem;
-  margin: 0 0 0.3rem;
+  margin: 0 0 0.4rem;
 }
 .izd-cover__tagline {
   font-family: var(--izd-body);
   font-size: 1.0rem;
-  color: var(--izd-ink-soft);
-  max-width: 42ch;
-  margin: 0;
+  line-height: 1.55;
+  color: var(--izd-ink);
+  max-width: 46ch;
+  margin: 0 0 1.1rem;
 }
 
-/* индекс разделов — оглавление мануала, НЕ карточки */
-.izd-index { margin: 1.4rem 0; }
-.md-typeset .izd-index ol { list-style: none; margin: 0; padding: 0; counter-reset: izd; }
+/* CTA-кнопка (Telegram-сообщество) — штамп */
+.md-typeset .izd-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.05rem;
+  font-family: var(--izd-display);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: #fff2e8;
+  background: var(--izd-vermilion);
+  border: 2px solid var(--izd-vermilion);
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 0.12s, color 0.12s;
+}
+.md-typeset .izd-cta:hover { background: transparent; color: var(--izd-vermilion); }
+.md-typeset .izd-cta svg { width: 1.05rem; height: 1.05rem; fill: currentColor; }
+
+/* индекс разделов — опись мануала с плоскими монохромными иконками */
+.izd-index { margin: 1.2rem 0; }
+.md-typeset .izd-index ul { list-style: none; margin: 0; padding: 0; }
 .md-typeset .izd-index li {
   display: grid;
-  grid-template-columns: 2.6rem 1fr;
-  gap: 0.2rem 0.9rem;
-  align-items: baseline;
-  padding: 0.7rem 0.3rem;
+  grid-template-columns: 2.1rem 1fr;
+  gap: 0.05rem 0.85rem;
+  align-items: start;
+  padding: 0.7rem 0.5rem;
   border-bottom: 1px solid var(--izd-line);
   margin: 0;
+  transition: background 0.1s;
 }
-.md-typeset .izd-index li::before {
-  counter-increment: izd;
-  content: counter(izd, decimal-leading-zero);
+.md-typeset .izd-index li:hover { background: var(--izd-vermilion-soft); }
+.md-typeset .izd-index .izd-ic {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: center;
+}
+.md-typeset .izd-index .izd-ic svg {
+  width: 1.55rem;
+  height: 1.55rem;
+  fill: var(--izd-ink-soft);
+}
+.md-typeset .izd-index li:hover .izd-ic svg { fill: var(--izd-vermilion); }
+.md-typeset .izd-index li strong {
+  grid-column: 2;
   font-family: var(--izd-display);
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: var(--izd-vermilion);
-  grid-row: span 2;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-size: 0.98rem;
 }
-.izd-index li b, .izd-index li strong { font-family: var(--izd-display); text-transform: uppercase; letter-spacing: 0.03em; font-weight: 600; font-size: 0.98rem; }
-.izd-index li b a, .izd-index li strong a { color: var(--izd-ink); text-decoration: none; }
-.izd-index li b a:hover, .izd-index li strong a:hover { color: var(--izd-vermilion); text-decoration: underline; text-decoration-color: var(--izd-vermilion); }
-.izd-index li span { display: block; grid-column: 2; color: var(--izd-ink-soft); font-size: 0.78rem; }
+.md-typeset .izd-index li strong a { color: var(--izd-ink); text-decoration: none; }
+.md-typeset .izd-index li:hover strong a { color: var(--izd-vermilion); }
+.md-typeset .izd-index li span { grid-column: 2; color: var(--izd-ink-soft); font-size: 0.78rem; line-height: 1.45; }
 
 /* ---------- МОБИЛЬНОЕ: тело крупнее, обложка компактнее ------------------ */
 @media screen and (max-width: 76.1875em) {
