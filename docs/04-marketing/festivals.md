@@ -209,7 +209,7 @@ Steam не запрещает удаление демо-версии после 
 
 - **Организатор:** Media Indie Exchange (MIX), один из самых крупных и уважаемых кураторов.
 - **Как работает:** проводят стрим + фестиваль на Steam, как правило в рамках Summer of Gaming.
-- **Как участвовать:** нужно подать заявку на [https://www.themix.games/](https://www.themix.games/) или через форму в твиттере/почте.
+- **Как участвовать:** нужно подать заявку на [mediaindieexchange.com](https://mediaindieexchange.com) или через форму в твиттере/почте.
 - **Пример страницы в Steam:** [Guerrilla Collective 2023](https://store.steampowered.com/sale/GuerrillaCollective2023)
 
 ### 🌍 **Latin American Games Showcase / Africa Games Week / Eastern European Games**
