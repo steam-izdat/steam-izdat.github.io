@@ -16,21 +16,23 @@ title: "Календарь фестивалей и распродаж 2026"
 
 ## 🟢 Актуальные и будущие — 2-е полугодие 2026
 
+Названия тематических фестов — **ссылки на их страницу opt-in в Steamworks** (нужен вход в партнёрку; окно подтверждения открывается ближе к дате).
+
 | Когда | Событие | Кому |
 |---|---|---|
 | 25 июн – 9 июл | **Летняя распродажа** | релизнутым |
-| 13–16 июл | Фестиваль социальной дедукции | по тегу |
-| 20–27 июл | Фестиваль поездов | по тегу |
-| 3–10 авг | Фестиваль киберпанка | по тегу |
-| 17–20 авг | Фестиваль кеглей и колышков (pins & pegs) | по тегу |
-| 31 авг – 7 сен | Фестиваль выживания и крафтинга «Игрок против ИИ» | по тегу |
-| 10–14 сен | Фестиваль программирования | по тегу |
-| 14–21 сен | Фестиваль групповых ролевых игр (party-based RPG) | по тегу |
+| 13–16 июл | [Фестиваль социальной дедукции](https://partner.steamgames.com/optin/sale/sale_social_deduction_2026) | по тегу |
+| 20–27 июл | [Фестиваль поездов](https://partner.steamgames.com/optin/sale/sale_trains_2026) | по тегу |
+| 3–10 авг | [Фестиваль киберпанка](https://partner.steamgames.com/optin/sale/sale_cyberpunk_2026) | по тегу |
+| 17–20 авг | [Фестиваль кеглей и колышков](https://partner.steamgames.com/optin/sale/sale_pins_pegs_2026) | по тегу |
+| 31 авг – 7 сен | [Фестиваль выживания и крафтинга «Игрок против ИИ»](https://partner.steamgames.com/optin/sale/sale_pve_survival_crafting_2026) | по тегу |
+| 10–14 сен | [Фестиваль программирования](https://partner.steamgames.com/optin/sale/sale_programming_2026) | по тегу |
+| 14–21 сен | [Фестиваль групповых ролевых игр](https://partner.steamgames.com/optin/sale/sale_party_rpg_2026) | по тегу |
 | 1–8 окт | **Осенняя распродажа** | релизнутым |
-| 12–19 окт | Кулинарный фестиваль | по тегу |
-| **19–26 окт** | **Steam Next Fest** | нерелизнутым с демо (один раз за жизнь игры) |
-| 26 окт – 2 ноя | Steam Scream: фестиваль страшных игр | по тегу |
-| 16–23 ноя | Фестиваль авто-баттлеров (auto-battler RPG) | по тегу |
+| 12–19 окт | [Кулинарный фестиваль](https://partner.steamgames.com/optin/sale/sale_cooking_2026) | по тегу |
+| **19–26 окт** | [**Steam Next Fest**](https://partner.steamgames.com/optin/sale/nextfest_october_2026) | нерелизнутым с демо (один раз за жизнь игры) |
+| 26 окт – 2 ноя | [Steam Scream: фестиваль страшных игр](https://partner.steamgames.com/optin/sale/sale_horror_2026) | по тегу |
+| 16–23 ноя | [Фестиваль авто-баттлеров](https://partner.steamgames.com/optin/sale/sale_auto_battler_2026) | по тегу |
 | 17 дек – 4 янв 2027 | **Зимняя распродажа** | релизнутым |
 
 Чёрная пятница в ноябре планируется, но точные даты на 2026-06 ещё не объявлены.
@@ -87,7 +89,7 @@ title: "Календарь фестивалей и распродаж 2026"
 
 ## 🎪 Сторонние шоукейсы — куда ещё нести игру
 
-Кроме официальных фестов Steam есть **сторонние шоукейсы** — их проводят издатели и кураторы, у каждого своя тема и **отбор по заявке** (форма или сайт организатора). Многие дают страницу события в Steam и трансляцию с охватом. Кликни, чтобы раскрыть.
+Кроме официальных фестов Steam есть **сторонние шоукейсы** — их проводят издатели и кураторы, у каждого своя тема и **отбор по заявке** (форма или сайт организатора). Многие дают страницу события в Steam и трансляцию с охватом.
 
 <div class="cl cl-warn" markdown>
 
@@ -95,53 +97,14 @@ title: "Календарь фестивалей и распродаж 2026"
 
 </div>
 
-??? note "Wholesome Direct / Wholesome Games Celebration — уютное и доброе"
-
-    Ежегодная выставка уютных, добрых, «cozy» игр (Direct — летом, Celebration в Steam — ближе к осени). С мрачной атмосферой попасть сложно. Сайт: [wholesomegames.com](https://wholesomegames.com).
-
-    **Подать заявку:** [форма сезона 2026](https://docs.google.com/forms/d/e/1FAIpQLSdqO1X4cb76Ro_6VphSofNoSYUURWeXvtDRILfkOOexCFoNAg/viewform) (одна форма на Direct и Celebration).
-
-??? note "The MIX Showcase (Media Indie Exchange) — широкий инди-охват"
-
-    Один из крупнейших и уважаемых кураторов: онлайн + офлайн шоукейсы со страницей события в Steam и трансляцией. Участие платное (порядка нескольких сотен \$). Сайт: [mediaindieexchange.com](https://mediaindieexchange.com).
-
-    **Подать заявку:** [страница шоукейсов MIX](https://mediaindieexchange.com/showcases) — выбери актуальный сезон.
-
-??? note "LudoNarraCon — нарративные игры"
-
-    Большой фестиваль в Steam от издателя Fellow Traveller для сюжетных игр. Высокая конкуренция отбора.
-
-    **Подать заявку:** через сайт [ludonarracon.com](https://www.ludonarracon.com) (форма открывается под сезон).
-
-??? note "TactiCon — тактика и стратегия"
-
-    Цифровое событие в Steam от Hooded Horse и Firesquid для тактических игр (игра должна давать игроку угрозы, решаемые тактикой — чисто мирные строилки и головоломки не подходят). Сайт: [tacticon.games](https://tacticon.games).
-
-    **Подать заявку:** [форма сезона 2026](https://docs.google.com/forms/d/e/1FAIpQLSdRZEn1Of66mAuRSsd2_2uD26njzAI12j_tzNO1orD6KQRUEQ/viewform).
-
-??? note "IndieCade — премия и инновации"
-
-    Ежегодное событие с премией IndieCade Awards и распродажей в Steam. Подача платная, с отбором. Сайт: [indiecade.com](https://www.indiecade.com).
-
-    **Подать заявку:** [форма IndieCade](https://pci.jotform.com/form/260583855743063).
-
-??? note "Tiny Teams — команды до 5 человек"
-
-    Фест для игр от команд из пяти и менее человек. Подача по форме, событие обычно летом.
-
-    **Подать заявку:** актуальную форму и дедлайн ищи у [@alex_razur](https://t.me/alex_razur) (постоянной ссылки у организатора нет).
-
-??? note "Short Games Showcase — игры короче 5 часов"
-
-    Событие в Steam от Ogre Pixel для коротких игр (полноценный опыт менее чем за 5 часов, без растягивания гриндом).
-
-    **Подать заявку:** [форма сезона 2026](https://docs.google.com/forms/d/e/1FAIpQLSfu2ng-gKKxkvUy7EhkOkI1ckLYnpDN4H3_yWP1D4fdvJES8g/viewform).
-
-??? note "INDIE Live Expo — крупный мировой шоукейс"
-
-    Одна из крупнейших инди-программ (Япония), за свою историю представила более 3000 игр. Есть лимит дохода для юрлиц и отбор при большом числе заявок.
-
-    **Подать заявку:** [форма сезона 2026](https://docs.google.com/forms/d/e/1FAIpQLSdTaENB9PIaNZb-_zXwmRfwwnvvQHC0O41-Wq_rOLfMIklv8A/viewform).
+- **Wholesome Direct / Celebration** — уютные, добрые «cozy» игры (Direct — летом, Celebration в Steam — к осени); с мрачной атмосферой попасть сложно. [сайт](https://wholesomegames.com) · [подать → форма 2026](https://docs.google.com/forms/d/e/1FAIpQLSdqO1X4cb76Ro_6VphSofNoSYUURWeXvtDRILfkOOexCFoNAg/viewform)
+- **The MIX Showcase** — крупный уважаемый куратор, онлайн+офлайн, страница события в Steam и трансляция; участие платное (порядка сотен \$). [сайт](https://mediaindieexchange.com) · [подать → шоукейсы](https://mediaindieexchange.com/showcases)
+- **LudoNarraCon** — большой фестиваль в Steam от Fellow Traveller для нарративных игр; высокая конкуренция. [подать → через сайт](https://www.ludonarracon.com)
+- **TactiCon** — тактические игры (Hooded Horse + Firesquid); чисто мирные строилки и головоломки не подходят. [сайт](https://tacticon.games) · [подать → форма 2026](https://docs.google.com/forms/d/e/1FAIpQLSdRZEn1Of66mAuRSsd2_2uD26njzAI12j_tzNO1orD6KQRUEQ/viewform)
+- **IndieCade** — событие с премией IndieCade Awards + распродажа в Steam; подача платная, с отбором. [сайт](https://www.indiecade.com) · [подать → форма](https://pci.jotform.com/form/260583855743063)
+- **Tiny Teams** — игры от команд из ≤5 человек, событие обычно летом. [подать → форму ищи у @alex_razur](https://t.me/alex_razur) (постоянной ссылки нет)
+- **Short Games Showcase** — короткие игры (полный опыт <5 часов, без растягивания гриндом), от Ogre Pixel. [подать → форма 2026](https://docs.google.com/forms/d/e/1FAIpQLSfu2ng-gKKxkvUy7EhkOkI1ckLYnpDN4H3_yWP1D4fdvJES8g/viewform)
+- **INDIE Live Expo** — одна из крупнейших инди-программ (Япония, >3000 игр за историю); лимит дохода для юрлиц, отбор. [подать → форма 2026](https://docs.google.com/forms/d/e/1FAIpQLSdTaENB9PIaNZb-_zXwmRfwwnvvQHC0O41-Wq_rOLfMIklv8A/viewform)
 
 Механика подачи, требования к демо и подробный разбор Next Fest — на странице [Участие в фестивалях](festivals.md). Чтобы не пропускать окна opt-in официальных фестов — подпишись на **Steamworks Communication**.
 
