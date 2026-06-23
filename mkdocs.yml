@@ -1,0 +1,112 @@
+site_name: STEAMиздат
+site_url: https://steam-izdat.github.io/
+site_description: >-
+  Полевой мануал для инди-разработчиков, которые издают свои игры в Steam.
+  Регистрация в Steamworks, работа из РФ и других стран, банки и выплаты,
+  маркетинг, цены, статистика, частые ошибки.
+site_author: Редакция STEAMиздат
+copyright: >-
+  Контент под лицензией
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ru" rel="noopener" target="_blank">CC&nbsp;BY-NC-SA&nbsp;4.0</a>
+  · STEAMиздат
+
+# Репозиторий гайда — правки приветствуются
+repo_name: steam-izdat.github.io
+repo_url: https://github.com/steam-izdat/steam-izdat.github.io
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: ru
+  font: false            # шрифты подключаем сами (Oswald / Lora / JetBrains Mono) — не Roboto
+  favicon: assets/favicon.svg
+  logo: assets/logo.svg
+  icon:
+    repo: material/source-branch
+    edit: material/pencil-box-outline
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: izdat-paper
+      toggle:
+        icon: material/weather-night
+        name: Ночной режим (для тех, кто чинит билд в 2 ночи)
+    - media: "(prefers-color-scheme: dark)"
+      scheme: izdat-ink
+      toggle:
+        icon: material/weather-sunny
+        name: Дневной режим
+  features:
+    - navigation.indexes      # кликабельные обложки разделов
+    - navigation.top          # кнопка «наверх»
+    - navigation.tracking     # url следует за прокруткой
+    - navigation.footer       # назад/вперёд внизу
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.tooltips
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html            # ОБЯЗАТЕЛЬНО: рендерит markdown внутри наших <div class="cl">
+  - tables
+  - toc:
+      permalink: "#"
+      permalink_title: Ссылка на этот раздел
+      toc_depth: 3
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search:
+      lang: ru
+
+extra:
+  social:
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/+qWcZc4g1arRhMGY6
+      name: Чат STEAMиздат
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/nesteamizdat
+      name: Канал «Уставший паблишинг»
+    - icon: material/github
+      link: https://github.com/steam-izdat
+      name: GitHub STEAMиздат
+
+nav:
+  - Главная: index.md
+  - 01 · С чего начать: 01-start/index.md
+  - 02 · Работа из РФ:
+      - 02-russia/index.md
+      - Райффайзенбанк: 02-russia/raiffeisenbank.md
+      - Челябинвестбанк (ЧИБ): 02-russia/chelyabinvestbank.md
+      - Зарубежные карты: 02-russia/foreign-cards.md
+  - 03 · Из других стран: 03-other-countries/index.md
+  - 04 · Маркетинг:
+      - 04-marketing/index.md
+      - Участие в фестивалях: 04-marketing/festivals.md
+  - 05 · Цены и финансы: 05-pricing/index.md
+  - 06 · Статистика: 06-statistics/index.md
+  - 07 · Инструменты и сообщества: 07-tools/index.md
+  - 08 · Проблемы и ошибки: 08-problems/index.md
+  - 09 · Термины: 09-terms/index.md

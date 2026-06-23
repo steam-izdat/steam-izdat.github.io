@@ -1,0 +1,10 @@
+# Сборка MkDocs
+/site/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
