@@ -162,18 +162,36 @@ body, .md-typeset {
 .md-header__title { text-transform: uppercase; letter-spacing: 0.12em; font-weight: 700; }
 .md-tabs { border-bottom: 1px solid rgba(0,0,0,.25); }
 
-/* ---------- НАВИГАЦИЯ (читаемый sans, не condensed-display) --------------- */
-.md-nav { font-family: var(--izd-body); font-size: 0.7rem; line-height: 1.4; letter-spacing: 0; }
-.md-nav__item .md-nav__link--active { color: var(--izd-accent); font-weight: 600; }
-.md-nav__title { font-family: var(--izd-display); text-transform: uppercase; letter-spacing: 0.08em; }
+/* ---------- НАВИГАЦИЯ: визуально отделена от текста статьи ----------------- */
+.md-nav { font-family: var(--izd-body); font-size: 0.7rem; line-height: 1.45; letter-spacing: 0; }
 
+/* боковые панели обрамлены линией — видно, где меню, а где статья */
+.md-sidebar--primary { border-right: 1px solid var(--izd-line); }
+.md-sidebar--secondary { border-left: 1px solid var(--izd-line); }
+
+/* пункты меню приглушены — это навигация (хром), а не текст статьи */
+.md-nav__link { color: var(--izd-ink-soft); }
+.md-nav__link:hover { color: var(--izd-ink); }
+
+/* ярлыки колонок (STEAMиздат слева / Содержание справа) — явные шапки */
+.md-nav__title {
+  font-family: var(--izd-display);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.72rem;
+  color: var(--izd-accent);
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
+  border-bottom: 1px solid var(--izd-line);
+}
+
+/* активный пункт — Steam-голубой + метка */
+.md-nav__item .md-nav__link--active { color: var(--izd-accent); font-weight: 600; }
 .md-nav__link--active::before {
   content: "▸ ";
   color: var(--izd-accent);
   font-weight: 700;
 }
-
-.md-sidebar--secondary .md-nav__title { font-size: 0.7rem; }
 
 /* ---------- ВЫНОСНЫЕ БЛОКИ (бывшие Notion-callout'ы) ---------------------- */
 .md-typeset .cl {
