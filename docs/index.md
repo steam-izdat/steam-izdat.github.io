@@ -41,6 +41,12 @@ hide:
 
 <div class="cl cl-note" markdown>
 
+:material-account-edit: **От автора.** Гайд ведёт [Дмитрий Зайцев](https://t.me/dima_zaitsev_gamedev) — Telegram-канал про геймдев без издателей. Его база знаний по геймдизайну и разработке инди-игр: [indie-gamedev-knowledge-base](https://dim-s.github.io/indie-gamedev-knowledge-base/).
+
+</div>
+
+<div class="cl cl-note" markdown>
+
 :material-update: **Это живой документ.** Steam меняет алгоритмы, санкции и банковские обходы мутируют. Гайд ведёт редакция STEAMиздат и держит актуальным. Нашёл устаревшее или ошибку — пиши в [чат STEAMиздат](https://t.me/+qWcZc4g1arRhMGY6) или предложи правку в репозитории (карандаш вверху страницы).
 
 </div>

@@ -162,10 +162,10 @@ body, .md-typeset {
 .md-header__title { text-transform: uppercase; letter-spacing: 0.12em; font-weight: 700; }
 .md-tabs { border-bottom: 1px solid rgba(0,0,0,.25); }
 
-/* ---------- НАВИГАЦИЯ ----------------------------------------------------- */
-.md-nav { font-family: var(--izd-display); font-size: 0.74rem; letter-spacing: 0.01em; }
+/* ---------- НАВИГАЦИЯ (читаемый sans, не condensed-display) --------------- */
+.md-nav { font-family: var(--izd-body); font-size: 0.7rem; line-height: 1.4; letter-spacing: 0; }
 .md-nav__item .md-nav__link--active { color: var(--izd-accent); font-weight: 600; }
-.md-nav__title { text-transform: uppercase; letter-spacing: 0.08em; }
+.md-nav__title { font-family: var(--izd-display); text-transform: uppercase; letter-spacing: 0.08em; }
 
 .md-nav__link--active::before {
   content: "▸ ";
