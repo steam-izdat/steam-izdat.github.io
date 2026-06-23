@@ -39,6 +39,14 @@ hide:
 
 </div>
 
+<div class="cl cl-tip" markdown>
+
+:material-book-open-variant: **Библия маркетинга.** Большой community-документ [«Маркетинг инди игр»](https://docs.google.com/document/d/13ixSDRWBKVSOvHVhKyeZyaNXmrybOxEIuL-NImMLSD8/edit) — его годами ведут опытные участники сообщества STEAMиздат. Внутри накопленный опыт: анонс игры, Reddit, фестивали, конверсии, письма блогерам и многое другое.
+
+**Авторов у документа много** — это сборник опыта разных участников, поэтому на один и тот же вопрос там нередко встречаются **разные, иногда противоположные рекомендации**. Это нормально: бери его как набор проверенных практик, а не как единственно верную инструкцию — что сработало у одного, не обязательно сработает у тебя.
+
+</div>
+
 <div class="cl cl-note" markdown>
 
 :material-account-edit: **От автора.** Гайд ведёт [Дмитрий Зайцев](https://t.me/dima_zaitsev_gamedev) — Telegram-канал про геймдев без издателей. Его база знаний по геймдизайну и разработке инди-игр: [indie-gamedev-knowledge-base](https://dim-s.github.io/indie-gamedev-knowledge-base/).
