@@ -41,13 +41,18 @@ theme:
         icon: material/weather-sunny
         name: Дневной режим
   features:
-    - navigation.indexes      # кликабельные обложки разделов
-    - navigation.top          # кнопка «наверх»
-    - navigation.tracking     # url следует за прокруткой
-    - navigation.footer       # назад/вперёд внизу
+    - navigation.tabs             # верхние табы-категории (как в клиенте Steam)
+    - navigation.tabs.sticky      # табы прилипают вверху при прокрутке
+    - navigation.indexes          # кликабельные обложки разделов
+    - navigation.top              # кнопка «наверх»
+    - navigation.tracking         # url следует за прокруткой
+    - navigation.footer           # назад/вперёд внизу
+    - navigation.instant          # переходы без полной перезагрузки (быстрее на мобильном)
+    - navigation.instant.progress # тонкая полоса загрузки при медленном соединении
+    - navigation.path             # хлебные крошки — видно, где ты в гайде
     - toc.follow
-    - search.suggest
-    - search.highlight
+    - search.suggest              # поиск достраивает слово (ищут точными терминами)
+    - search.highlight            # подсветка найденного на странице
     - search.share
     - content.code.copy
     - content.tooltips
@@ -67,6 +72,12 @@ markdown_extensions:
       permalink: "#"
       permalink_title: Ссылка на этот раздел
       toc_depth: 3
+      # человекочитаемые якоря на кириллице (армения, казахстан…) — иначе
+      # дефолтный slugify вырезает кириллицу и заголовки получают мусорные id,
+      # ломая прямые ссылки на разделы и приземление поиска
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.betterem
   - pymdownx.caret
   - pymdownx.tilde
@@ -98,20 +109,32 @@ extra:
       link: https://github.com/steam-izdat
       name: GitHub STEAMиздат
 
+# Навигация сгруппирована по ситуации читателя (а не по номерам разделов):
+# верхние табы-категории, внутри — конкретные страницы.
 nav:
   - Главная: index.md
-  - 01 · С чего начать: 01-start/index.md
-  - 02 · Работа из РФ:
-      - 02-russia/index.md
-      - Райффайзенбанк: 02-russia/raiffeisenbank.md
-      - Челябинвестбанк (ЧИБ): 02-russia/chelyabinvestbank.md
-  - 03 · Из других стран: 03-other-countries/index.md
-  - 04 · Маркетинг:
-      - 04-marketing/index.md
+  - Старт: 01-start/index.md
+  - Деньги и страны:
+      - Банки · куда придут деньги: banks/index.md
+      - Работа из РФ:
+          - 02-russia/index.md
+          - Райффайзенбанк: 02-russia/raiffeisenbank.md
+          - Челябинвестбанк (ЧИБ): 02-russia/chelyabinvestbank.md
+      - Из других стран:
+          - 03-other-countries/index.md
+          - Армения: 03-other-countries/armenia.md
+          - Грузия: 03-other-countries/georgia.md
+          - Казахстан: 03-other-countries/kazakhstan.md
+          - Кыргызстан: 03-other-countries/kyrgyzstan.md
+          - Узбекистан: 03-other-countries/uzbekistan.md
+          - Сербия: 03-other-countries/serbia.md
+      - Цены и финансы: 05-pricing/index.md
+  - Продвижение:
+      - Маркетинг: 04-marketing/index.md
       - Участие в фестивалях: 04-marketing/festivals.md
       - Календарь фестивалей 2026: 04-marketing/fest-calendar.md
-  - 05 · Цены и финансы: 05-pricing/index.md
-  - 06 · Статистика: 06-statistics/index.md
-  - 07 · Инструменты и сообщества: 07-tools/index.md
-  - 08 · Проблемы и ошибки: 08-problems/index.md
-  - 09 · Термины: 09-terms/index.md
+      - Статистика: 06-statistics/index.md
+  - Справка:
+      - Инструменты и сообщества: 07-tools/index.md
+      - Проблемы и ошибки: 08-problems/index.md
+      - Термины: 09-terms/index.md
