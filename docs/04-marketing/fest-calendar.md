@@ -4,7 +4,7 @@ title: "Календарь фестивалей и распродаж 2026"
 
 # Календарь фестивалей и распродаж 2026
 
-<span class="stamp stamp--date">актуально на 2026-06</span> Живой календарь Steam-событий 2026 года: сезонные распродажи, Steam Next Fest и тематические фесты. Даты сверены с официальным [анонсом Steamworks](https://store.steampowered.com/news/group/4145017/view/493837645658461607). Точные даты, opt-in и условия каждого события всегда в Steamworks → [Event Calendar](https://partner.steamgames.com/doc/marketing/upcoming_events) — даты иногда двигаются, сверяйся перед планированием.
+<span class="stamp stamp--date">актуально на Июнь 2026</span> Живой календарь Steam-событий 2026 года: сезонные распродажи, Steam Next Fest и тематические фесты. Даты сверены с официальным [анонсом Steamworks](https://store.steampowered.com/news/group/4145017/view/493837645658461607). Точные даты, opt-in и условия каждого события всегда в Steamworks → [Event Calendar](https://partner.steamgames.com/doc/marketing/upcoming_events) — даты иногда двигаются, сверяйся перед планированием.
 
 **Как читать колонку «кому»:**
 
@@ -35,7 +35,7 @@ title: "Календарь фестивалей и распродаж 2026"
 | 16–23 ноя | [Фестиваль авто-баттлеров](https://partner.steamgames.com/optin/sale/sale_auto_battler_2026) | по тегу |
 | 17 дек – 4 янв 2027 | Зимняя распродажа | релизнутым |
 
-Чёрная пятница в ноябре планируется, но точные даты на 2026-06 ещё не объявлены.
+Чёрная пятница в ноябре планируется, но точные даты на Июнь 2026 ещё не объявлены.
 
 ### Как участвовать в официальных фестах Steam
 
@@ -103,7 +103,7 @@ title: "Календарь фестивалей и распродаж 2026"
 - **TactiCon** — тактические игры (Hooded Horse + Firesquid); чисто мирные строилки и головоломки не подходят. [сайт](https://tacticon.games) · [подать → форма 2026](https://docs.google.com/forms/d/e/1FAIpQLSdRZEn1Of66mAuRSsd2_2uD26njzAI12j_tzNO1orD6KQRUEQ/viewform)
 - **IndieCade** — событие с премией IndieCade Awards + распродажа в Steam; подача платная, с отбором. [сайт](https://www.indiecade.com) · [подать → форма](https://pci.jotform.com/form/260583855743063)
 - **Tiny Teams** — игры от команд из ≤5 человек, событие обычно летом. [подать → форму ищи у @alex_razur](https://t.me/alex_razur) (постоянной ссылки нет)
-- **Short Games Showcase** — короткие игры (полный опыт <5 часов, без растягивания гриндом), от Ogre Pixel. [подать → форма 2026](https://docs.google.com/forms/d/e/1FAIpQLSfu2ng-gKKxkvUy7EhkOkI1ckLYnpDN4H3_yWP1D4fdvJES8g/viewform)
+- **Short Games Showcase** — короткие игры (полный опыт <5 часов, без растягивания гриндом), от Ogre Pixel. <span class="stamp stamp--check">издание 2026 не подтверждено</span> [подать → форма](https://docs.google.com/forms/d/e/1FAIpQLSfu2ng-gKKxkvUy7EhkOkI1ckLYnpDN4H3_yWP1D4fdvJES8g/viewform)
 - **INDIE Live Expo** — одна из крупнейших инди-программ (Япония, >3000 игр за историю); лимит дохода для юрлиц, отбор. [подать → форма 2026](https://docs.google.com/forms/d/e/1FAIpQLSdTaENB9PIaNZb-_zXwmRfwwnvvQHC0O41-Wq_rOLfMIklv8A/viewform)
 
 Механика подачи, требования к демо и подробный разбор Next Fest — на странице [Участие в фестивалях](festivals.md). Чтобы не пропускать окна opt-in официальных фестов — подпишись на Steamworks Communication.
