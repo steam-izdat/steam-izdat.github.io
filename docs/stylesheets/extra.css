@@ -511,6 +511,17 @@ body, .md-typeset {
   border-left: 5px solid var(--izd-accent);
   background: var(--izd-paper-2);
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.izd-cover__body { flex: 1; min-width: 0; }
+.izd-cover__mascot {
+  flex: none;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  border: 1px solid var(--izd-line);
 }
 .izd-cover__kicker {
   font-family: var(--izd-mono);
@@ -554,6 +565,13 @@ body, .md-typeset {
 }
 .md-typeset .izd-cta:hover { filter: brightness(1.12); color: #ffffff; }
 .md-typeset .izd-cta svg { width: 1.05rem; height: 1.05rem; fill: currentColor; }
+.izd-cover__cta { display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 0; }
+.md-typeset .izd-cta--ghost {
+  color: var(--izd-accent);
+  background: transparent;
+  border-color: var(--izd-accent);
+}
+.md-typeset .izd-cta--ghost:hover { background: var(--izd-accent-soft); color: var(--izd-accent); filter: none; }
 
 /* индекс разделов — плоские монохромные иконки */
 .izd-index { margin: 1.2rem 0; }
@@ -592,6 +610,93 @@ body, .md-typeset {
 .md-typeset .izd-index li:hover strong a { color: var(--izd-accent); }
 .md-typeset .izd-index li span { grid-column: 2; color: var(--izd-ink-soft); font-size: 0.78rem; line-height: 1.45; }
 
+/* карта гайда — сетка карточек разделов */
+.izd-sections { margin: 1.2rem 0; }
+.md-typeset .izd-sections ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.8rem;
+}
+.md-typeset .izd-sections li {
+  display: grid;
+  grid-template-columns: 2.2rem 1fr;
+  gap: 0.15rem 0.8rem;
+  align-items: start;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid var(--izd-line);
+  background: var(--izd-paper-2);
+  transition: background 0.1s, border-color 0.1s;
+}
+.md-typeset .izd-sections li:hover { border-color: var(--izd-accent); background: var(--izd-accent-soft); }
+.md-typeset .izd-sections .izd-ic { grid-column: 1; grid-row: 1 / span 2; align-self: start; }
+.md-typeset .izd-sections .izd-ic svg { width: 1.6rem; height: 1.6rem; fill: var(--izd-ink-soft); }
+.md-typeset .izd-sections li:hover .izd-ic svg { fill: var(--izd-accent); }
+.md-typeset .izd-sections li > a {
+  grid-column: 2;
+  font-family: var(--izd-display);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--izd-ink);
+  text-decoration: none;
+}
+.md-typeset .izd-sections li:hover > a { color: var(--izd-accent); }
+.md-typeset .izd-sections li span { grid-column: 2; color: var(--izd-ink-soft); font-size: 0.8rem; line-height: 1.55; }
+.md-typeset .izd-sections li span a { color: var(--izd-accent); text-decoration: none; }
+.md-typeset .izd-sections li span a:hover { text-decoration: underline; }
+
+/* FAQ-аккордеон */
+.md-typeset details.izd-faq {
+  border: 1px solid var(--izd-line);
+  border-radius: 0;
+  background: var(--izd-paper-2);
+  box-shadow: none;
+  margin: 0.4rem 0;
+  font-size: inherit;
+}
+.md-typeset details.izd-faq > summary {
+  padding: 0.7rem 2.4rem 0.7rem 1rem;
+  font-family: var(--izd-body);
+  font-weight: 600;
+  color: var(--izd-ink);
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.12s;
+}
+.md-typeset details.izd-faq > summary:hover { color: var(--izd-accent); }
+.md-typeset details.izd-faq > summary::before { display: none; }
+.md-typeset details.izd-faq > summary::after {
+  content: "+";
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  width: auto;
+  height: auto;
+  background: none;
+  -webkit-mask: none;
+  mask: none;
+  transform: none;
+  color: var(--izd-accent);
+  font-family: var(--izd-mono);
+  font-size: 1.15rem;
+  line-height: 1;
+}
+.md-typeset details.izd-faq[open] > summary::after { content: "\2013"; }
+.md-typeset details.izd-faq[open] > summary { border-bottom: 1px solid var(--izd-line); }
+.md-typeset details.izd-faq > p {
+  margin: 0;
+  padding: 0.7rem 1rem;
+  color: var(--izd-ink-soft);
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+.md-typeset details.izd-faq a { color: var(--izd-accent); }
+
 /* ---------- МОБИЛЬНОЕ ----------------------------------------------------- */
 @media screen and (max-width: 76.1875em) {
   .md-typeset { font-size: 0.82rem; }
@@ -599,8 +704,10 @@ body, .md-typeset {
 @media screen and (max-width: 44.9375em) {
   .md-typeset h1 { font-size: 1.55rem; }
   .md-typeset .izd-cover h1 { font-size: 1.9rem; }
-  .izd-cover { padding: 1.1rem 1rem; }
+  .izd-cover { padding: 1.1rem 1rem; flex-direction: column-reverse; align-items: flex-start; gap: 1rem; }
+  .izd-cover__mascot { width: 96px; height: 96px; }
   .md-typeset .izd-index li { grid-template-columns: 2rem 1fr; }
+  .md-typeset .izd-sections ul { grid-template-columns: 1fr; }
 }
 
 /* подвал */
