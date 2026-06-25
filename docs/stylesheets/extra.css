@@ -160,7 +160,186 @@ body, .md-typeset {
 /* ---------- ШАПКА: тёмно-синяя панель Steam ------------------------------ */
 .md-header { border-bottom: 3px solid var(--izd-accent); }
 .md-header__title { text-transform: uppercase; letter-spacing: 0.12em; font-weight: 700; }
-.md-tabs { border-bottom: 1px solid rgba(0,0,0,.25); }
+.md-tabs { border-bottom: 1px solid rgba(0,0,0,.25); --izd-accent-hdr: #66c0f4; }
+
+/* лого ведёт домой → таб «Главная» лишний, прячем (index.md остаётся в nav) */
+.md-tabs__list > .md-tabs__item:first-child { display: none; }
+
+/* табы: приглушены как хром, с иконкой; плашку прижимаем к низу панели,
+   чтобы вертикальная подкладка была симметрична и не обрезалась о height:2.4rem */
+.md-tabs__item { display: flex; align-items: flex-end; }
+.md-tabs__link {
+  opacity: .8;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0;
+  padding: .5rem .85rem;
+  transition: opacity .15s ease, background .15s ease;
+}
+.md-tabs__link:hover { opacity: 1; }
+
+/* monochrome-иконка (наследует цвет текста таба, голубеет на активном) */
+.md-tabs__link::before {
+  content: "";
+  width: 1.05em; height: 1.05em;
+  margin-right: .45em;
+  flex: none;
+  background-color: currentColor;
+  -webkit-mask: var(--izd-tabicon) center / contain no-repeat;
+          mask: var(--izd-tabicon) center / contain no-repeat;
+}
+/* порядок после скрытой «Главной»: 2=Старт 3=Деньги 4=Продвижение 5=Справка */
+.md-tabs__item:nth-child(2) .md-tabs__link { --izd-tabicon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M8 5v14l11-7z'/%3E%3C/svg%3E"); }
+.md-tabs__item:nth-child(3) .md-tabs__link { --izd-tabicon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M2 6h20v12H2V6zm2 2v8h16V8H4zm8 1a3 3 0 1 1 0 6 3 3 0 0 1 0-6z'/%3E%3C/svg%3E"); }
+.md-tabs__item:nth-child(4) .md-tabs__link { --izd-tabicon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M4 9v6h3l5 4V5L7 9H4zm13 3a3 3 0 0 0-2-2.83v5.66A3 3 0 0 0 17 12z'/%3E%3C/svg%3E"); }
+.md-tabs__item:nth-child(5) .md-tabs__link { --izd-tabicon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 15h-2v-2h2zm1.6-6.6-1 1c-.4.4-.6.9-.6 1.6h-2c0-1 .4-1.8 1-2.4l1.2-1.2A1.5 1.5 0 1 0 9 8H7a4 4 0 1 1 7 2.4z'/%3E%3C/svg%3E"); }
+
+/* активная вкладка — плашка-сталь + голубая полоса сверху (вкладки клиента Steam) */
+.md-tabs__item--active .md-tabs__link {
+  opacity: 1;
+  color: #fff;
+  background: var(--md-primary-fg-color--light);
+  box-shadow: inset 0 2px 0 var(--izd-accent-hdr);
+}
+
+/* блок справа от поиска: ссылка на сообщество + плашка «Актуально» */
+.izd-source { display: inline-flex; align-items: center; gap: .55rem; }
+
+/* ссылка на Telegram-сообщество */
+.izd-tg {
+  display: inline-flex;
+  align-items: center;
+  gap: .32rem;
+  color: var(--md-primary-bg-color, #fff);
+  opacity: .85;
+  font-family: var(--izd-mono);
+  font-size: .62rem;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  white-space: nowrap;
+  transition: opacity .15s ease, color .15s ease;
+}
+.izd-tg:hover { opacity: 1; color: var(--izd-accent-hdr, #66c0f4); }
+.izd-tg__icon {
+  width: .95rem; height: .95rem; flex: none;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z'/%3E%3C/svg%3E") center / contain no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+@media (max-width: 76.1875em) { .izd-tg__txt { display: none; } }
+
+/* плашка «Актуально» в шапке (вместо ссылки на репозиторий) */
+.izd-actual {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .26rem .6rem;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 3px;
+  font-family: var(--izd-mono);
+  font-size: .62rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+.izd-actual__k { color: #93a4b4; text-transform: uppercase; letter-spacing: .07em; }
+.izd-actual__v { color: #66c0f4; font-weight: 700; }
+
+/* ---------- ШЕРИНГ-БАР под статьёй --------------------------------------- */
+.izd-share {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 3rem 0 .5rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--izd-line);
+}
+.izd-share__label {
+  font-family: var(--izd-display);
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  font-size: .72rem;
+  font-weight: 600;
+  color: var(--izd-ink-soft);
+  margin-right: .25rem;
+}
+.izd-share__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.15rem;
+  height: 2.15rem;
+  padding: 0;
+  border: 1px solid var(--izd-line);
+  border-radius: 3px;
+  background: transparent;
+  color: var(--izd-ink-soft);
+  cursor: pointer;
+  transition: color .15s ease, border-color .15s ease, background .15s ease;
+}
+.izd-share__btn svg { width: 1.05rem; height: 1.05rem; fill: currentColor; }
+.izd-share__btn:hover {
+  color: var(--izd-accent);
+  border-color: var(--izd-accent);
+  background: var(--izd-accent-soft);
+}
+.izd-share__btn--copy.is-copied {
+  color: var(--izd-green);
+  border-color: var(--izd-green);
+  background: transparent;
+}
+
+/* плавающий шеринг-док у правого края — всегда под рукой, одна кнопка */
+.izd-sharedock {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 6;
+  display: flex;
+  align-items: center;
+}
+.izd-sharedock__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.3rem;
+  height: 3rem;
+  padding: 0;
+  border: 1px solid var(--izd-accent);
+  border-radius: 5px 0 0 5px;
+  background: var(--izd-accent);
+  color: var(--izd-paper);
+  cursor: pointer;
+  box-shadow: -3px 0 10px rgba(0, 0, 0, .18);
+}
+.izd-sharedock__toggle svg { width: 1.15rem; height: 1.15rem; fill: currentColor; }
+.izd-sharedock__panel {
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+  margin-right: -1px;
+  padding: .45rem;
+  background: var(--izd-paper);
+  border: 1px solid var(--izd-line);
+  border-radius: 5px 0 0 5px;
+  opacity: 0;
+  transform: translateX(14px);
+  pointer-events: none;
+  transition: opacity .18s ease, transform .18s ease;
+}
+.izd-sharedock:hover .izd-sharedock__panel,
+.izd-sharedock.is-open .izd-sharedock__panel {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+.izd-sharedock__panel .izd-share__btn { background: var(--izd-paper); }
+@media (max-width: 44.9375em) {
+  .izd-sharedock__toggle { width: 2.1rem; height: 2.7rem; }
+}
+@media print { .izd-sharedock { display: none; } }
 
 /* ---------- НАВИГАЦИЯ: визуально отделена от текста статьи ----------------- */
 .md-nav { font-family: var(--izd-body); font-size: 0.7rem; line-height: 1.45; letter-spacing: 0; }

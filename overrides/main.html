@@ -4,4 +4,48 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+
+  {# ---- Open Graph / Twitter Card: красивый предпросмотр в Telegram, X, Discord ---- #}
+  {% set og_title = (page.title ~ " · " ~ config.site_name) if page and page.title and not page.is_homepage else config.site_name %}
+  {% set og_desc = page.meta.description if page and page.meta and page.meta.description else config.site_description %}
+  {% set og_image = config.site_url ~ "assets/og-cover.png" %}
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="{{ og_title }}">
+  <meta property="og:description" content="{{ og_desc | striptags | trim }}">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ og_title }}">
+  <meta name="twitter:description" content="{{ og_desc | striptags | trim }}">
+  <meta name="twitter:image" content="{{ og_image }}">
+{% endblock %}
+
+{% block content %}
+  {{ super() }}
+  {% if page and page.canonical_url and not page.is_homepage %}
+  <nav class="izd-share" aria-label="Поделиться страницей">
+    <span class="izd-share__label">Поделиться</span>
+    <a class="izd-share__btn" href="https://t.me/share/url?url={{ page.canonical_url | urlencode }}&amp;text={{ page.title | urlencode }}" target="_blank" rel="noopener" title="Telegram" aria-label="Поделиться в Telegram">{% include ".icons/fontawesome/brands/telegram.svg" %}</a>
+    <a class="izd-share__btn" href="https://twitter.com/intent/tweet?url={{ page.canonical_url | urlencode }}&amp;text={{ page.title | urlencode }}" target="_blank" rel="noopener" title="X (Twitter)" aria-label="Поделиться в X">{% include ".icons/fontawesome/brands/x-twitter.svg" %}</a>
+    <a class="izd-share__btn" href="https://vk.com/share.php?url={{ page.canonical_url | urlencode }}" target="_blank" rel="noopener" title="ВКонтакте" aria-label="Поделиться во ВКонтакте">{% include ".icons/fontawesome/brands/vk.svg" %}</a>
+    <a class="izd-share__btn" href="https://api.whatsapp.com/send?text={{ page.title | urlencode }}%20{{ page.canonical_url | urlencode }}" target="_blank" rel="noopener" title="WhatsApp" aria-label="Поделиться в WhatsApp">{% include ".icons/fontawesome/brands/whatsapp.svg" %}</a>
+    <button class="izd-share__btn izd-share__btn--copy" type="button" title="Скопировать ссылку" aria-label="Скопировать ссылку" data-url="{{ page.canonical_url }}">{% include ".icons/material/link-variant.svg" %}</button>
+  </nav>
+
+  {# плавающий шеринг-док — всегда у правого края, одна кнопка #}
+  <div class="izd-sharedock" data-url="{{ page.canonical_url }}">
+    <div class="izd-sharedock__panel">
+      <a class="izd-share__btn" href="https://t.me/share/url?url={{ page.canonical_url | urlencode }}&amp;text={{ page.title | urlencode }}" target="_blank" rel="noopener" title="Telegram" aria-label="Поделиться в Telegram">{% include ".icons/fontawesome/brands/telegram.svg" %}</a>
+      <a class="izd-share__btn" href="https://twitter.com/intent/tweet?url={{ page.canonical_url | urlencode }}&amp;text={{ page.title | urlencode }}" target="_blank" rel="noopener" title="X (Twitter)" aria-label="Поделиться в X">{% include ".icons/fontawesome/brands/x-twitter.svg" %}</a>
+      <a class="izd-share__btn" href="https://vk.com/share.php?url={{ page.canonical_url | urlencode }}" target="_blank" rel="noopener" title="ВКонтакте" aria-label="Поделиться во ВКонтакте">{% include ".icons/fontawesome/brands/vk.svg" %}</a>
+      <a class="izd-share__btn" href="https://api.whatsapp.com/send?text={{ page.title | urlencode }}%20{{ page.canonical_url | urlencode }}" target="_blank" rel="noopener" title="WhatsApp" aria-label="Поделиться в WhatsApp">{% include ".icons/fontawesome/brands/whatsapp.svg" %}</a>
+      <button class="izd-share__btn izd-share__btn--copy" type="button" title="Скопировать ссылку" aria-label="Скопировать ссылку" data-url="{{ page.canonical_url }}">{% include ".icons/material/link-variant.svg" %}</button>
+    </div>
+    <button class="izd-sharedock__toggle" type="button" aria-label="Поделиться" aria-expanded="false" title="Поделиться">{% include ".icons/material/share-variant.svg" %}</button>
+  </div>
+  {% endif %}
 {% endblock %}

@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="STEAMиздат">
-  <rect x="2" y="2" width="60" height="60" rx="6" fill="#1b2838"/>
-  <rect x="9" y="9" width="46" height="46" rx="3" fill="none" stroke="#c7d5e0" stroke-width="3"/>
-  <rect x="24" y="4" width="16" height="7" rx="1.5" fill="#1b2838" stroke="#c7d5e0" stroke-width="2.5"/>
-  <path d="M26 21 L48 32 L26 43 Z" fill="#66c0f4"/>
-</svg>

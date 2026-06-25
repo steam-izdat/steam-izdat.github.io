@@ -1,4 +1,4 @@
-site_name: STEAMиздат
+site_name: STEAMиздат Гайд v2.0
 site_url: https://steam-izdat.github.io/
 site_description: >-
   Полевой мануал для инди-разработчиков, которые издают свои игры в Steam.
@@ -23,28 +23,34 @@ theme:
   custom_dir: overrides
   language: ru
   font: false            # шрифты подключаем сами (Oswald / Lora / JetBrains Mono) — не Roboto
-  favicon: assets/favicon.svg
-  logo: assets/logo.svg
+  favicon: assets/favicon.png
+  logo: assets/logo.png
   icon:
     repo: material/source-branch
     edit: material/pencil-box-outline
   palette:
+    # три режима по клику циклом: системная → светлая → тёмная.
     # светлая «бумага» базируется на Material default, тёмная «оператор» — на slate,
     # чтобы все компоненты (поиск, таблицы, код, сноски) унаследовали корректный свет/тьму
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: "Тема — как в системе (клик: светлая)"
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
-        icon: material/weather-night
-        name: Ночной режим (для тех, кто чинит билд в 2 ночи)
+        icon: material/weather-sunny
+        name: "Светлая тема (клик: тёмная)"
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
-        icon: material/weather-sunny
-        name: Дневной режим
+        icon: material/weather-night
+        name: "Тёмная тема (клик: системная)"
   features:
     - navigation.tabs             # верхние табы-категории (как в клиенте Steam)
     - navigation.tabs.sticky      # табы прилипают вверху при прокрутке
     - navigation.indexes          # кликабельные обложки разделов
+    - navigation.expand           # левое меню раздела раскрыто — видно все страницы сразу
     - navigation.top              # кнопка «наверх»
     - navigation.tracking         # url следует за прокруткой
     - navigation.footer           # назад/вперёд внизу
@@ -60,6 +66,9 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/share.js
 
 markdown_extensions:
   - abbr
