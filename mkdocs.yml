@@ -69,6 +69,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/share.js
+  - javascripts/calc-payout.js
 
 markdown_extensions:
   - abbr
@@ -150,3 +151,6 @@ nav:
       - Инструменты и сообщества: 07-tools/index.md
       - Проблемы и ошибки: 08-problems/index.md
       - Термины: 09-terms/index.md
+  - Калькуляторы:
+      - calc/index.md
+      - Сколько дойдёт до счёта: calc/payout.md

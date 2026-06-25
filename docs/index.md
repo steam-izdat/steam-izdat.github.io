@@ -56,6 +56,7 @@ hide:
 - :material-bank-outline:{ .izd-ic } [Деньги и страны](banks/index.md)<span>[Банки по странам](banks/index.md) · [Релокация и нерезидентство](03-other-countries/index.md) · [Цены и финансы](05-pricing/index.md)</span>
 - :material-bullhorn-outline:{ .izd-ic } [Продвижение](04-marketing/index.md)<span>[Маркетинг](04-marketing/index.md) · [Страница в Steam](04-marketing/store-page.md) · [Фестивали](04-marketing/festivals.md) · [Статистика](06-statistics/index.md)</span>
 - :material-lifebuoy:{ .izd-ic } [Справка](07-tools/index.md)<span>[Инструменты](07-tools/index.md) · [Проблемы и ошибки](08-problems/index.md) · [Термины](09-terms/index.md)</span>
+- :material-calculator-variant-outline:{ .izd-ic } [Калькуляторы](calc/index.md)<span>Считают прямо в браузере: сколько дойдёт до счёта с продажи — и не только.</span>
 
 </div>
 
