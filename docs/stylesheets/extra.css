@@ -171,7 +171,7 @@ body, .md-typeset {
 
 /* табы: приглушены как хром, с иконкой; плашку прижимаем к низу панели,
    чтобы вертикальная подкладка была симметрична и не обрезалась о height:2.4rem */
-.md-tabs__item { display: flex; align-items: flex-end; padding-left: 0; padding-right: 0; }
+.md-tabs__item { display: flex; align-items: flex-end; height: 2.1rem; padding-left: 0; padding-right: 0; }
 .md-tabs__link {
   opacity: .8;
   font-weight: 500;
