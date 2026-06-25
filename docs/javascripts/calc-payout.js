@@ -42,7 +42,9 @@ function izdCalcPayout(root) {
   q(".izd-calc__otv").textContent = izdPct(nOT);
 
   var blended = izdR2(nUS * us.bank + nAD * ad.bank + nOT * ot.bank);
-  var effPct = price ? Math.round(blended / price * 100) : 0;
+  var refund = (parseFloat(q(".izd-calc__refund").value) || 0) / 100;
+  var finalBank = izdR2(blended * (1 - refund));
+  var effPct = price ? Math.round(finalBank / price * 100) : 0;
 
   var out = q(".izd-calc__out");
   if (!tot) {
@@ -51,13 +53,14 @@ function izdCalcPayout(root) {
   }
   var devVpct = Math.round(devV * 100), otVpct = Math.round(otV * 100), regFpct = Math.round(regF * 100);
   out.innerHTML =
-    '<p class="izd-calc__headline">В среднем с продажи тебе дойдёт <b>' + izdMoney(blended) + '</b> — ≈ ' + effPct + '% от базовой цены ' + izdMoney(price) + '.</p>' +
+    '<p class="izd-calc__headline">В среднем с продажи тебе дойдёт <b>' + izdMoney(finalBank) + '</b> — ≈ ' + effPct + '% от базовой цены ' + izdMoney(price) + '.</p>' +
     '<div class="izd-calc__steps"><p class="izd-calc__stepstitle">Как посчитано:</p><ul>' +
     '<li><b>США</b> (' + izdPct(nUS) + ' продаж): ' + izdMoney(price) + ' → Valve −' + izdMoney(us.steam) + ' → твои ' + izdMoney(us.dev) +
       (us.wh > 0 ? ' → налог США ' + Math.round(rate * 100) + '% −' + izdMoney(us.wh) : ' → налог США 0%') + ' → <b>' + izdMoney(us.bank) + '</b></li>' +
     '<li><b>Развитые</b> (' + izdPct(nAD) + '): ' + izdMoney(price) + ' ÷ ' + (1 + devV).toFixed(2) + ' (НДС ~' + devVpct + '% внутри) = ' + izdMoney(ad.net) + ' → Valve −' + izdMoney(ad.steam) + ' → <b>' + izdMoney(ad.bank) + '</b></li>' +
     '<li><b>Развивающиеся</b> (' + izdPct(nOT) + '): региональная цена ' + izdMoney(otPrice) + ' (' + regFpct + '% от базовой) ÷ ' + (1 + otV).toFixed(2) + ' (НДС ~' + otVpct + '%) = ' + izdMoney(ot.net) + ' → Valve −' + izdMoney(ot.steam) + ' → <b>' + izdMoney(ot.bank) + '</b></li>' +
     '<li><b>Среднее по долям</b>: ' + nUS.toFixed(2) + '×' + izdMoney(us.bank) + ' + ' + nAD.toFixed(2) + '×' + izdMoney(ad.bank) + ' + ' + nOT.toFixed(2) + '×' + izdMoney(ot.bank) + ' = <b>' + izdMoney(blended) + '</b></li>' +
+    (refund > 0 ? '<li><b>Возвраты −' + Math.round(refund * 100) + '%</b>: ' + izdMoney(blended) + ' × ' + (1 - refund).toFixed(2) + ' = <b>' + izdMoney(finalBank) + '</b></li>' : '') +
     '</ul></div>';
 }
 
