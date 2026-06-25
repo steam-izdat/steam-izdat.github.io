@@ -2,8 +2,9 @@ site_name: STEAMиздат
 site_url: https://steam-izdat.github.io/
 site_description: >-
   Полевой мануал для инди-разработчиков, которые издают свои игры в Steam.
-  Регистрация в Steamworks, работа из РФ и других стран, банки и выплаты,
-  маркетинг, цены, статистика, частые ошибки.
+  Регистрация в Steamworks, работа из разных стран — России, Казахстана,
+  Армении, Грузии и других, банки и выплаты, маркетинг, цены, статистика,
+  частые ошибки.
 site_author: Редакция STEAMиздат
 copyright: >-
   Контент под лицензией
@@ -115,22 +116,24 @@ nav:
   - Главная: index.md
   - Старт: 01-start/index.md
   - Деньги и страны:
-      - Банки · куда придут деньги: banks/index.md
-      - Работа из РФ:
-          - 02-russia/index.md
-          - Райффайзенбанк: 02-russia/raiffeisenbank.md
-          - Челябинвестбанк (ЧИБ): 02-russia/chelyabinvestbank.md
-      - Из других стран:
-          - 03-other-countries/index.md
+      - Куда придут деньги — обзор: banks/index.md
+      - По странам:
+          - Россия:
+              - 02-russia/index.md
+              - Райффайзенбанк: 02-russia/raiffeisenbank.md
+              - Челябинвестбанк (архив): 02-russia/chelyabinvestbank.md
           - Армения: 03-other-countries/armenia.md
+          - Беларусь: 03-other-countries/belarus.md
           - Грузия: 03-other-countries/georgia.md
           - Казахстан: 03-other-countries/kazakhstan.md
           - Кыргызстан: 03-other-countries/kyrgyzstan.md
           - Узбекистан: 03-other-countries/uzbekistan.md
           - Сербия: 03-other-countries/serbia.md
+      - Релокация и нерезидентство: 03-other-countries/index.md
       - Цены и финансы: 05-pricing/index.md
   - Продвижение:
       - Маркетинг: 04-marketing/index.md
+      - Оформление страницы в Steam: 04-marketing/store-page.md
       - Участие в фестивалях: 04-marketing/festivals.md
       - Календарь фестивалей 2026: 04-marketing/fest-calendar.md
       - Статистика: 06-statistics/index.md
