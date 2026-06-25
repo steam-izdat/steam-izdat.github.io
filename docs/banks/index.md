@@ -47,7 +47,7 @@ title: "Какой банк принимает выплаты Valve"
 | 🇰🇿 **БЦК (Bank CenterCredit)** | ✅ | Открывает по загранпаспорту + ИИН, принимает входящий USD-SWIFT | [Казахстан →](../03-other-countries/kazakhstan.md) |
 | 🇬🇪 **TBC, Bank of Georgia** | ✅ | Принимают SWIFT от Valve. Счёт только при личном визите | [Грузия →](../03-other-countries/georgia.md) |
 | 🇬🇪 **Basis Bank** | ⚠ | Принимает, но требует проживания 3+ месяца | [Грузия →](../03-other-countries/georgia.md) |
-| 🇬🇪 **Credo** | ❌ | SWIFT от Steam блокирует. Но картой можно оплатить слот и рекламу | [Грузия →](../03-other-countries/georgia.md) |
+| 🇬🇪 **Credo** | ❌ | Входящий SWIFT от Steam исторически блокировал (корреспондент BoG). На 2026-06 — слух о смене корреспондента, но приём Steam не подтверждён (был кейс ~7-мес задержки). Картой удобно оплатить слот/рекламу | [Грузия →](../03-other-countries/georgia.md) |
 | 🇦🇲 **Ameria, Ardshin, ACBA, Ararat** | ✅ | Принимают USD-SWIFT (корреспонденты Citibank / RBI / BNY Mellon, 2026) | [Армения →](../03-other-countries/armenia.md) |
 | 🇦🇲 **Converse, IDBank, Evoca** | ❌ | Во входящей USD-цепочке Bank of Georgia — риск разворота | [Армения →](../03-other-countries/armenia.md) |
 | 🇦🇲 **Ineco** | ⚠ | USD через BNY Mellon (с 2025), но риск закрытия счёта при дальнейшей релокации | [Армения →](../03-other-countries/armenia.md) |
