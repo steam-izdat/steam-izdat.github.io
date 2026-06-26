@@ -1,0 +1,16 @@
+// Стили только для PDF-версии гайда (движок Chromium через mkdocs-exporter).
+// Прячем интерактивные/навигационные элементы, которые в печатном документе не нужны.
+
+// шеринг-панели и плавающий док — в PDF бессмысленны
+.izd-share,
+.izd-sharedock { display: none !important; }
+
+// верхняя плашка «скачать PDF» — не печатаем внутри самого PDF
+.md-banner { display: none !important; }
+
+// CTA-кнопки на обложке главной (включая «Скачать PDF») в печати не нужны
+.izd-cover__cta { display: none !important; }
+
+// аккуратные разрывы: не рвём заголовки и таблицы по страницам
+h1, h2, h3 { break-after: avoid; }
+table, pre, blockquote, .cl { break-inside: avoid; }

@@ -63,6 +63,7 @@ theme:
     - search.share
     - content.code.copy
     - content.tooltips
+    - announce.dismiss            # верхнюю плашку «скачать PDF» можно закрыть
 
 extra_css:
   - stylesheets/extra.css
@@ -109,6 +110,20 @@ markdown_extensions:
 plugins:
   - search:
       lang: ru
+  # PDF-версия гайда: единый файл steam-izdat-guide.pdf, собирается при build
+  # (движок — headless Chromium через Playwright). Для быстрого локального serve
+  # отключай генерацию: MKDOCS_EXPORTER_PDF=false mkdocs serve
+  - exporter:
+      formats:
+        pdf:
+          enabled: !ENV [MKDOCS_EXPORTER_PDF, true]
+          concurrency: 8
+          stylesheets:
+            - resources/stylesheets/pdf.scss
+          aggregator:
+            enabled: true
+            output: steam-izdat-guide.pdf
+            covers: none
 
 extra:
   social:

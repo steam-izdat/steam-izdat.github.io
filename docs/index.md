@@ -19,6 +19,7 @@ hide:
 <a class="izd-cta" href="01-start/">:material-rocket-launch-outline: С чего начать</a>
 <a class="izd-cta izd-cta--ghost" href="https://t.me/+qWcZc4g1arRhMGY6" target="_blank" rel="noopener">:fontawesome-brands-telegram: Чат сообщества</a>
 <a class="izd-cta izd-cta--ghost" href="https://docs.google.com/document/d/1GJ4itIpfGsmWY2bDGRkxT7icK3HjIE3F/edit?tab=t.0" target="_blank" rel="noopener">:material-book-open-variant: Библия маркетинга</a>
+<a class="izd-cta izd-cta--ghost" href="/steam-izdat-guide.pdf">:material-file-download-outline: Скачать PDF</a>
 </p>
 
 </div>

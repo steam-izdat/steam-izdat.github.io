@@ -1,1 +1,2 @@
 mkdocs-material==9.7.6
+mkdocs-exporter==6.2.0

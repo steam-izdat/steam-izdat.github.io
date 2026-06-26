@@ -891,3 +891,18 @@ body, .md-typeset {
 
 /* подвал */
 .md-footer-meta { font-family: var(--izd-mono); font-size: 0.7rem; }
+
+/* ---------- плашка «Скачать PDF» (announce bar) -------------------------- */
+.md-banner__inner { text-align: center; margin: 0.4rem auto; }
+.izd-pdflink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--izd-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+.izd-pdflink svg { width: 1.05em; height: 1.05em; fill: currentColor; flex: none; }
+.izd-pdflink:hover { text-decoration: underline; }
