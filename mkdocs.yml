@@ -70,6 +70,8 @@ extra_css:
 extra_javascript:
   - javascripts/share.js
   - javascripts/calc-payout.js
+  - javascripts/calc-discounts.js
+  - javascripts/calc-timing.js
 
 markdown_extensions:
   - abbr
@@ -154,3 +156,5 @@ nav:
   - Калькуляторы:
       - calc/index.md
       - Сколько дойдёт до счёта: calc/payout.md
+      - Планировщик скидок: calc/discounts.md
+      - Тайминг по поясам: calc/timing.md

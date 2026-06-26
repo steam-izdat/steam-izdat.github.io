@@ -347,7 +347,9 @@ body, .md-typeset {
 @media print { .izd-sharedock { display: none; } }
 
 /* ---------- ТУЛЗЫ: калькуляторы ----------------------------------------- */
-.izd-calc {
+.izd-calc,
+.izd-disc,
+.izd-tm {
   margin: 1.2rem 0;
   border: 1px solid var(--izd-line);
   border-left: 4px solid var(--izd-accent);
@@ -363,7 +365,8 @@ body, .md-typeset {
 }
 .izd-calc__controls input,
 .izd-calc__controls select,
-.izd-calc__advbody input {
+.izd-calc__advbody input,
+.izd-tm__ref {
   display: block;
   margin-top: 0.25rem;
   padding: 0.42rem 0.55rem;
@@ -459,6 +462,67 @@ body, .md-typeset {
   background: var(--izd-accent);
   border-color: var(--izd-accent);
 }
+
+/* ---------- ПЛАНИРОВЩИК СКИДОК ------------------------------------------- */
+.izd-disc__b { font-family: var(--izd-mono); font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 2px; white-space: nowrap; }
+.izd-disc__b--ok { color: var(--izd-ok); border: 1px solid var(--izd-ok); }
+.izd-disc__b--no { color: var(--izd-danger); border: 1px solid var(--izd-danger); }
+.izd-disc__b--warn { color: var(--izd-amber); border: 1px solid var(--izd-amber); }
+.izd-disc__b--mute { color: var(--izd-ink-soft); border: 1px solid var(--izd-line); }
+.izd-disc__verdict {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin: 0.9rem 0 0;
+  padding: 0.7rem 0.9rem;
+  border-left: 3px solid var(--izd-line);
+  background: var(--izd-paper);
+}
+.izd-disc__v--ok { border-left-color: var(--izd-ok); }
+.izd-disc__v--no { border-left-color: var(--izd-danger); }
+.izd-disc__v--mute { border-left-color: var(--izd-line); color: var(--izd-ink-soft); }
+.izd-disc__time { font-size: 0.78rem; color: var(--izd-ink-soft); line-height: 1.5; margin: 0.55rem 0 0; }
+.izd-disc__time b { color: var(--izd-ink); }
+.izd-disc__sub { font-size: 0.78rem; color: var(--izd-ink-soft); margin: 0.9rem 0 0.4rem; }
+.md-typeset .izd-disc__list { list-style: none; margin: 0; padding: 0; font-size: 0.85rem; line-height: 1.7; }
+.md-typeset .izd-disc__list li { margin: 0.25rem 0; }
+
+/* ---------- ТАЙМИНГ ПО ПОЯСАМ ------------------------------------------- */
+.izd-tm__controls { display: grid; grid-template-columns: minmax(11rem, 13rem) 1fr; gap: 1.1rem 1.5rem; align-items: end; }
+.izd-tm__controls > label { font-size: 0.78rem; color: var(--izd-ink-soft); }
+.izd-tm__val { font-family: var(--izd-mono); color: var(--izd-accent); }
+.izd-tm__slider { display: block; width: 100%; margin-top: 0.55rem; accent-color: var(--izd-accent); }
+.izd-tm__slot { grid-column: 1 / -1; justify-self: start; margin-top: 0.1rem; }
+.izd-tm__out { font-variant-numeric: tabular-nums; }
+@media (max-width: 44.9375em) { .izd-tm__controls { grid-template-columns: 1fr; } }
+.izd-tm__sw { font-size: 0.85rem; line-height: 1.5; margin: 0.7rem 0 0; padding: 0.6rem 0.8rem; background: var(--izd-accent-soft); border-left: 3px solid var(--izd-accent); }
+.izd-tm__sw b { color: var(--izd-accent); }
+.izd-tm__sweet { font-family: var(--izd-mono); font-size: 0.72rem; color: var(--izd-green); white-space: nowrap; }
+.izd-tm__cov { margin-top: 1rem; }
+.izd-tm__covbar { height: 0.7rem; background: var(--izd-paper); border: 1px solid var(--izd-line); }
+.izd-tm__covbar span { display: block; height: 100%; background: var(--izd-accent); transition: width 0.12s ease; }
+.izd-tm__covlbl { font-size: 0.82rem; color: var(--izd-ink-soft); margin: 0.35rem 0 0; }
+.izd-tm__regions { margin: 1.1rem 0 0; }
+.izd-tm__r {
+  display: grid;
+  grid-template-columns: minmax(7rem, 1fr) 7.5rem 3.2rem 4.4rem;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.34rem 0;
+  border-bottom: 1px solid var(--izd-line);
+  font-size: 0.84rem;
+}
+.izd-tm__rhead { font-family: var(--izd-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 0.62rem; color: var(--izd-ink-soft); padding-bottom: 0.4rem; }
+.izd-tm__rn { color: var(--izd-ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.izd-tm__r.is-peak .izd-tm__rn { color: var(--izd-ok); font-weight: 500; }
+.izd-tm__rw { display: flex; align-items: center; gap: 0.45rem; }
+.izd-tm__rwtrack { width: 4.5rem; height: 0.5rem; background: var(--izd-paper); border: 1px solid var(--izd-line); flex: none; }
+.izd-tm__rwfill { display: block; height: 100%; background: var(--izd-accent); }
+.izd-tm__rwval { font-family: var(--izd-mono); font-size: 0.72rem; color: var(--izd-ink-soft); }
+.izd-tm__rt { font-family: var(--izd-mono); }
+.izd-tm__b { font-family: var(--izd-mono); font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 2px; }
+.izd-tm__b--peak { color: var(--izd-ok); border: 1px solid var(--izd-ok); }
+.izd-tm__b--near { color: var(--izd-amber); border: 1px solid var(--izd-amber); }
+.izd-tm__b--off { color: var(--izd-ink-soft); border: 1px solid var(--izd-line); }
 
 /* ---------- НАВИГАЦИЯ: визуально отделена от текста статьи ----------------- */
 .md-nav { font-family: var(--izd-body); font-size: 0.7rem; line-height: 1.45; letter-spacing: 0; }
