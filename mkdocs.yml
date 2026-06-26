@@ -132,6 +132,7 @@ nav:
       - По странам:
           - Россия:
               - 02-russia/index.md
+              - Регистрация ИП и налоги: 02-russia/ip-registration.md
               - Райффайзенбанк: 02-russia/raiffeisenbank.md
               - Челябинвестбанк (архив): 02-russia/chelyabinvestbank.md
           - Армения: 03-other-countries/armenia.md
