@@ -153,14 +153,15 @@ nav:
               - Регистрация ИП и налоги: 02-russia/ip-registration.md
               - Райффайзенбанк: 02-russia/raiffeisenbank.md
               - Челябинвестбанк (архив): 02-russia/chelyabinvestbank.md
-          - Азербайджан: 03-other-countries/azerbaijan.md
+          # порядок — по доступности нерезиденту и возможностям, не по алфавиту
           - Армения: 03-other-countries/armenia.md
-          - Беларусь: 03-other-countries/belarus.md
           - Грузия: 03-other-countries/georgia.md
           - Казахстан: 03-other-countries/kazakhstan.md
-          - Кыргызстан: 03-other-countries/kyrgyzstan.md
           - Узбекистан: 03-other-countries/uzbekistan.md
+          - Азербайджан: 03-other-countries/azerbaijan.md
+          - Беларусь: 03-other-countries/belarus.md
           - Сербия: 03-other-countries/serbia.md
+          - Кыргызстан: 03-other-countries/kyrgyzstan.md
       - Релокация и нерезидентство: 03-other-countries/index.md
       - Цены и финансы: 05-pricing/index.md
   - Продвижение:
