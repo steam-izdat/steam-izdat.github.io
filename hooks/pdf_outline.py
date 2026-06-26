@@ -57,7 +57,9 @@ def on_post_build(config):
     combined = os.path.join(site_dir, OUTPUT)
 
     if not _nav or not os.path.exists(combined):
-        log.warning("[pdf_outline] нет навигации или сводного PDF на момент хука — пропуск")
+        # PDF-генерация отключена (напр. MKDOCS_EXPORTER_PDF=false) — это норма,
+        # не роняем --strict предупреждением
+        log.info("[pdf_outline] сводный PDF не найден (PDF-генерация отключена?) — пропуск")
         return
 
     # стартовая страница каждой страницы — в порядке nav (= порядок склейки)
