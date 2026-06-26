@@ -14,3 +14,22 @@
 // аккуратные разрывы: не рвём заголовки и таблицы по страницам
 h1, h2, h3 { break-after: avoid; }
 table, pre, blockquote, .cl { break-inside: avoid; }
+
+// ---------- плотнее: меньше полей и отступов, больше текста на страницу -----
+// поля самой страницы (по умолчанию paged.js щедрый ~1in)
+@page { margin: 12mm 12mm 14mm 12mm; }
+
+// убираем внешние отступы контейнеров Material и верхний спейсер
+.md-main__inner { margin-top: 0 !important; }
+.md-content,
+.md-content__inner { padding: 0 !important; margin: 0 !important; }
+.md-content__inner::before { display: none !important; } // пустой spacer сверху страницы
+
+// чуть поджимаем вертикальные интервалы между блоками текста
+.md-typeset { line-height: 1.5; }
+.md-typeset p,
+.md-typeset ul,
+.md-typeset ol { margin: 0.4em 0; }
+.md-typeset h2 { margin: 0.8em 0 0.4em; }
+.md-typeset h3 { margin: 0.6em 0 0.3em; }
+.md-typeset .cl { padding: 0.6rem 0.8rem; margin: 0.7em 0; }

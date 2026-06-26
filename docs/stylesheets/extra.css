@@ -892,17 +892,25 @@ body, .md-typeset {
 /* подвал */
 .md-footer-meta { font-family: var(--izd-mono); font-size: 0.7rem; }
 
-/* ---------- плашка «Скачать PDF» (announce bar) -------------------------- */
-.md-banner__inner { text-align: center; margin: 0.4rem auto; }
-.izd-pdflink {
+/* ---------- кнопка «PDF» в шапке (рядом с «Сообщество») ------------------ */
+.izd-pdf {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: .32rem;
+  color: var(--md-primary-bg-color, #fff);
+  opacity: .85;
   font-family: var(--izd-mono);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  color: inherit;
+  font-size: .62rem;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  white-space: nowrap;
+  transition: opacity .15s ease, color .15s ease;
 }
-.izd-pdflink svg { width: 1.05em; height: 1.05em; fill: currentColor; flex: none; }
-.izd-pdflink:hover { text-decoration: underline; }
+.izd-pdf:hover { opacity: 1; color: var(--izd-accent-hdr, #66c0f4); }
+.izd-pdf__icon {
+  width: .95rem; height: .95rem; flex: none;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z'/%3E%3C/svg%3E") center / contain no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+@media (max-width: 76.1875em) { .izd-pdf__txt { display: none; } }

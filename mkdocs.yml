@@ -63,7 +63,6 @@ theme:
     - search.share
     - content.code.copy
     - content.tooltips
-    - announce.dismiss            # верхнюю плашку «скачать PDF» можно закрыть
 
 extra_css:
   - stylesheets/extra.css
@@ -106,6 +105,10 @@ markdown_extensions:
   - pymdownx.emoji:       # плоские монохромные иконки :material-...: (наследуют цвет текста)
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Хук: добавляет закладки-оглавление в сводный PDF после сборки
+hooks:
+  - hooks/pdf_outline.py
 
 plugins:
   - search:
