@@ -106,9 +106,13 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-# Хук: добавляет закладки-оглавление в сводный PDF после сборки
+# Хуки:
+#  - pdf_outline — закладки-оглавление в сводном PDF после сборки
+#  - og_cards    — per-page Open Graph карточки (Steam-стиль) через headless-Chromium;
+#                  отключить на быстром serve: MKDOCS_OG_CARDS=false mkdocs serve
 hooks:
   - hooks/pdf_outline.py
+  - hooks/og_cards.py
 
 plugins:
   - search:

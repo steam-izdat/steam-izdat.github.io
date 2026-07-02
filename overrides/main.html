@@ -6,9 +6,16 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
 
   {# ---- Open Graph / Twitter Card: красивый предпросмотр в Telegram, X, Discord ---- #}
-  {% set og_title = (page.title ~ " · " ~ config.site_name) if page and page.title and not page.is_homepage else config.site_name %}
+  {# заголовок предпросмотра: полный front-matter title (как в <title> вкладки), иначе H1 #}
+  {% set og_page_title = (page.meta.title if page and page.meta and page.meta.title else page.title) if page else none %}
+  {% set og_title = (og_page_title ~ " · " ~ config.site_name) if og_page_title and not page.is_homepage else config.site_name %}
   {% set og_desc = page.meta.description if page and page.meta and page.meta.description else config.site_description %}
-  {% set og_image = config.site_url ~ "assets/og-cover.png" %}
+  {# per-page карточка (hooks/og_cards.py кладёт og.png рядом с index.html страницы); главная — обложка бренда #}
+  {% if page and page.canonical_url and not page.is_homepage %}
+    {% set og_image = page.canonical_url ~ "og.png" %}
+  {% else %}
+    {% set og_image = config.site_url ~ "assets/og-cover.png" %}
+  {% endif %}
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ config.site_name }}">
   <meta property="og:locale" content="ru_RU">
