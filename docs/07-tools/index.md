@@ -54,7 +54,7 @@ title: "Инструменты, полезные сервисы, сообщес�
 | Сервис | Назначение |
 |---|---|
 | [Официальный курс валют ЦБ РФ](https://cbr.ru/currency_base/daily/) | Для расчета налогов, конвертаций, заполнения форм. |
-| [Курс валют ЦБ Грузии](https://nbg.gov.ge/en/monetary-policy/currency) | Аналогично для рассчетов — для ИП в Грузии. |
+| [Курс валют ЦБ Грузии](https://nbg.gov.ge/en/monetary-policy/currency) | Аналогично для расчётов — для ИП в Грузии. |
 | [Список стран с налоговыми соглашениями с США (IRS)](https://www.irs.gov/businesses/international-businesses/united-states-income-tax-treaties-a-to-z) | Чтобы понять, можно ли снизить налог с доходов от Steam в своей стране через W8BEN. |
 
 ## 📺 Интересные блогеры и каналы

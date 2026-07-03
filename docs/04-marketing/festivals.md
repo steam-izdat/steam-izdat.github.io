@@ -42,7 +42,7 @@ Steam Next Fest — регулярный онлайн-фестиваль, где
 
 ### **Когда проходит Steam Next Fest и как узнать точные даты?**
 
-Steam Next Fest проводится примерно 3 раза в год: в феврале, июне и октябре. В 2026-м это <span class="stamp stamp--date">2026</span> 23 фев – 2 мар, 15–22 июн и 19–26 окт. Точные даты всегда публикуются в Steamworks в разделе [Event Calendar](https://partner.steamgames.com/doc/marketing/upcoming_events). Valve также присылает уведомления на почту всем разработчикам с подходящими играм.
+Steam Next Fest проводится примерно 3 раза в год: в феврале, июне и октябре. В 2026-м это <span class="stamp stamp--date">2026</span> 23 фев – 2 мар, 15–22 июн и 19–26 окт. Точные даты всегда публикуются в Steamworks в разделе [Event Calendar](https://partner.steamgames.com/doc/marketing/upcoming_events). Valve также присылает уведомления на почту всем разработчикам с подходящими играми.
 
 ### **Какие игры могут участвовать?**
 
