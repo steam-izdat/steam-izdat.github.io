@@ -4,7 +4,7 @@ title: "Календарь фестивалей и распродаж 2026"
 
 # Календарь фестивалей и распродаж 2026
 
-<span class="stamp stamp--date">актуально на Июнь 2026</span> Живой календарь Steam-событий 2026 года: сезонные распродажи, Steam Next Fest и тематические фесты. Даты сверены с официальным [анонсом Steamworks](https://store.steampowered.com/news/group/4145017/view/493837645658461607). Точные даты, opt-in и условия каждого события всегда в Steamworks → [Event Calendar](https://partner.steamgames.com/doc/marketing/upcoming_events) — даты иногда двигаются, сверяйся перед планированием.
+<span class="stamp stamp--date">актуально на 2026-07</span> Живой календарь Steam-событий 2026 года: сезонные распродажи, Steam Next Fest и тематические фесты. Даты сверены с официальным [анонсом Steamworks](https://store.steampowered.com/news/group/4145017/view/493837645658461607). Точные даты, opt-in и условия каждого события всегда в Steamworks → [Event Calendar](https://partner.steamgames.com/doc/marketing/upcoming_events) — даты иногда двигаются, сверяйся перед планированием.
 
 **Как читать колонку «кому»:**
 
@@ -30,12 +30,18 @@ title: "Календарь фестивалей и распродаж 2026"
 | 14–21 сен | [Фестиваль групповых ролевых игр](https://partner.steamgames.com/optin/sale/sale_party_rpg_2026) | по тегу |
 | 1–8 окт | Осенняя распродажа | релизнутым |
 | 12–19 окт | [Кулинарный фестиваль](https://partner.steamgames.com/optin/sale/sale_cooking_2026) | по тегу |
-| 19–26 окт | [**Steam Next Fest**](https://partner.steamgames.com/optin/sale/nextfest_october_2026) | нерелизнутым с демо (один раз за жизнь игры) |
+| 19–26 окт | [**Steam Next Fest**](https://partner.steamgames.com/optin/sale/nextfest_october_2026) · [дедлайны](https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october) | нерелизнутым с демо (один раз за жизнь игры) |
 | 26 окт – 2 ноя | [Steam Scream: фестиваль страшных игр](https://partner.steamgames.com/optin/sale/sale_horror_2026) | по тегу |
 | 16–23 ноя | [Фестиваль авто-баттлеров](https://partner.steamgames.com/optin/sale/sale_auto_battler_2026) | по тегу |
 | 17 дек – 4 янв 2027 | Зимняя распродажа | релизнутым |
 
-Чёрная пятница в ноябре планируется, но точные даты на Июнь 2026 ещё не объявлены.
+Чёрная пятница в ноябре планируется, но точные даты на Июль 2026 ещё не объявлены. Valve обычно называет их за 10–14 дней до события — сверяйся в [Event Calendar](https://partner.steamgames.com/doc/marketing/upcoming_events).
+
+<div class="cl cl-warn" markdown>
+
+**Ближайший жёсткий дедлайн: 31 августа 2026, 23:59 PDT — регистрация на октябрьский Next Fest.** <span class="stamp stamp--date">актуально на 2026-07</span> Демо к этой дате не нужно, нужна опубликованная страница Coming Soon и заявка. Остальные сроки феста (сбор трейлеров, Press Preview, review материалов) — в разборе [Участие в фестивалях](festivals.md#-тайминг-и-подготовка-к-next-fest).
+
+</div>
 
 ### Как участвовать в официальных фестах Steam
 
