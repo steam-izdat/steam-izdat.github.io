@@ -17,6 +17,9 @@ for root, dirs, files in os.walk("."):
         if f == "index.html":
             pages.append(os.path.relpath(os.path.join(root, f), ".").replace(os.sep, "/"))
 pages.sort()
+import glob
+for og in glob.glob("**/og.png", recursive=True): os.remove(og)
+print("og.png удалены")
 print(f"pages: {len(pages)}")
 
 with sync_playwright() as p:
