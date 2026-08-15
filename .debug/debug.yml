@@ -1,5 +1,7 @@
 name: Debug PDF 404
-on: [workflow_dispatch]
+on:
+  push:
+    branches: [ci-probe-debug]
 jobs:
   probe:
     runs-on: ubuntu-latest
