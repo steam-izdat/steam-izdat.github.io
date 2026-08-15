@@ -12,5 +12,5 @@ jobs:
           python-version: "3.x"
       - run: pip install -r requirements.txt
       - run: python -m playwright install chromium
-      - run: MKDOCS_EXPORTER_PDF=false mkdocs build --strict
+      - run: mkdocs build --strict
       - run: python .debug/pdf_probe.py
