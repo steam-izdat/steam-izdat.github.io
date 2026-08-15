@@ -17,7 +17,7 @@ hide:
 
 <p class="izd-cover__cta" markdown="span">
 <a class="izd-cta" href="01-start/">:material-rocket-launch-outline: С чего начать</a>
-<a class="izd-cta izd-cta--ghost" href="https://t.me/+qWcZc4g1arRhMGY6" target="_blank" rel="noopener">:fontawesome-brands-telegram: Чат сообщества</a>
+<a class="izd-cta izd-cta--ghost" href="https://t.me/+71EnXbVVfg83MzUy" target="_blank" rel="noopener">:fontawesome-brands-telegram: Чат сообщества</a>
 <a class="izd-cta izd-cta--ghost" href="04-marketing/marketing-bible/">:material-book-open-variant: Библия маркетинга</a>
 <a class="izd-cta izd-cta--ghost" href="/steam-izdat-guide.pdf">:material-file-download-outline: Скачать PDF</a>
 </p>
@@ -30,7 +30,7 @@ hide:
 
 ## С чего начать — по твоей ситуации
 
-Не знаешь, в какой раздел тебе? Выбери, что про тебя сейчас — это самые частые ситуации, с которыми приходят в [чат STEAMиздат](https://t.me/+qWcZc4g1arRhMGY6).
+Не знаешь, в какой раздел тебе? Выбери, что про тебя сейчас — это самые частые ситуации, с которыми приходят в [чат STEAMиздат](https://t.me/+71EnXbVVfg83MzUy).
 
 <div class="izd-index" markdown>
 
@@ -130,6 +130,6 @@ $100 за игру (Steam Direct Fee, «слот»). Возвращается, �
 
 <div class="cl cl-note" markdown>
 
-:material-update: **Это живой документ.** Steam меняет алгоритмы, санкции и банковские обходы мутируют. Гайд ведёт редакция STEAMиздат и держит актуальным. Нашёл устаревшее или ошибку — пиши в [чат STEAMиздат](https://t.me/+qWcZc4g1arRhMGY6) или предложи правку в репозитории (карандаш вверху страницы).
+:material-update: **Это живой документ.** Steam меняет алгоритмы, санкции и банковские обходы мутируют. Гайд ведёт редакция STEAMиздат и держит актуальным. Нашёл устаревшее или ошибку — пиши в [чат STEAMиздат](https://t.me/+71EnXbVVfg83MzUy) или предложи правку в репозитории (карандаш вверху страницы).
 
 </div>

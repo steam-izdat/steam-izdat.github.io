@@ -14,7 +14,7 @@ title: "Маркетинг и продвижение"
 
 <div class="cl cl-tip" markdown>
 
-**Что почитать по теме.** Основной чат [STEAMиздат](https://t.me/+qWcZc4g1arRhMGY6) · блог [Chris Zukowski](https://howtomarketagame.com/blog/) · аналитика [Simon Carless / GameDiscoverCo](https://newsletter.gamediscover.co/) · исследование [BGM Game Discovery Survey 2024](https://www.biggamesmachine.com/wp-content/uploads/2024/05/BGM-Game-discovery-survey-2024.pdf). Полный список блогеров, чатов и сервисов аналитики — в разделе [Инструменты и сообщества](../07-tools/index.md).
+**Что почитать по теме.** Основной чат [STEAMиздат](https://t.me/+71EnXbVVfg83MzUy) · блог [Chris Zukowski](https://howtomarketagame.com/blog/) · аналитика [Simon Carless / GameDiscoverCo](https://newsletter.gamediscover.co/) · исследование [BGM Game Discovery Survey 2024](https://www.biggamesmachine.com/wp-content/uploads/2024/05/BGM-Game-discovery-survey-2024.pdf). Полный список блогеров, чатов и сервисов аналитики — в разделе [Инструменты и сообщества](../07-tools/index.md).
 
 </div>
 
@@ -106,7 +106,7 @@ TL;DR — Если совсем коротко: начинать маркети�
 
 <div class="cl cl-tip" markdown>
 
-Как составить список блогеров/СМИ, спланировать инфоповоды и провести анонс — подробно разобрано в [Библии маркетинга](marketing-bible.md) (раздел «Анонс страницы игры») и в [чате STEAMиздат](https://t.me/+qWcZc4g1arRhMGY6).
+Как составить список блогеров/СМИ, спланировать инфоповоды и провести анонс — подробно разобрано в [Библии маркетинга](marketing-bible.md) (раздел «Анонс страницы игры») и в [чате STEAMиздат](https://t.me/+71EnXbVVfg83MzUy).
 
 </div>
 
