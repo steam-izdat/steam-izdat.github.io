@@ -125,8 +125,6 @@ plugins:
         pdf:
           enabled: !ENV [MKDOCS_EXPORTER_PDF, true]
           concurrency: 8
-          scripts:
-            - .debug/probe.js
           stylesheets:
             - resources/stylesheets/pdf.scss
           aggregator:

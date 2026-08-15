@@ -1,10 +1,6 @@
 {% extends "base.html" %}
 
 {% block extrahead %}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
-
   {# ---- Open Graph / Twitter Card: красивый предпросмотр в Telegram, X, Discord ---- #}
   {# заголовок предпросмотра: полный front-matter title (как в <title> вкладки), иначе H1 #}
   {% set og_page_title = (page.meta.title if page and page.meta and page.meta.title else page.title) if page else none %}
