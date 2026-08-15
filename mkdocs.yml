@@ -125,7 +125,6 @@ plugins:
         pdf:
           enabled: !ENV [MKDOCS_EXPORTER_PDF, true]
           concurrency: 8
-          debug: true
           scripts:
             - .debug/probe.js
           stylesheets:
