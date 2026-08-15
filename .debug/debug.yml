@@ -1,0 +1,14 @@
+name: Debug PDF 404
+on: [workflow_dispatch]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+      - run: pip install -r requirements.txt
+      - run: python -m playwright install chromium
+      - run: MKDOCS_EXPORTER_PDF=false mkdocs build --strict
+      - run: python .debug/pdf_probe.py
