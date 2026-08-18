@@ -4,7 +4,7 @@ title: "Календарь фестивалей и распродаж 2026"
 
 # Календарь фестивалей и распродаж 2026
 
-<span class="stamp stamp--date">актуально на 2026-07</span> Живой календарь Steam-событий 2026 года: сезонные распродажи, Steam Next Fest и тематические фесты. Даты сверены с официальным [анонсом Steamworks](https://store.steampowered.com/news/group/4145017/view/493837645658461607). Точные даты, opt-in и условия каждого события всегда в Steamworks → [Event Calendar](https://partner.steamgames.com/doc/marketing/upcoming_events) — даты иногда двигаются, сверяйся перед планированием.
+<span class="stamp stamp--date">актуально на 2026-08</span> Живой календарь Steam-событий: сезонные распродажи, Steam Next Fest и тематические фесты. Даты сверены с официальным [анонсом Steamworks](https://store.steampowered.com/news/group/4145017/view/493837645658461607). Точные даты, opt-in и условия каждого события всегда в Steamworks → [Event Calendar](https://partner.steamgames.com/doc/marketing/upcoming_events) — даты иногда двигаются, сверяйся перед планированием.
 
 **Как читать колонку «кому»:**
 
@@ -35,7 +35,7 @@ title: "Календарь фестивалей и распродаж 2026"
 | 16–23 ноя | [Фестиваль авто-баттлеров](https://partner.steamgames.com/optin/sale/sale_auto_battler_2026) | по тегу |
 | 17 дек – 4 янв 2027 | Зимняя распродажа | релизнутым |
 
-Чёрная пятница в ноябре планируется, но точные даты на Июль 2026 ещё не объявлены. Valve обычно называет их за 10–14 дней до события — сверяйся в [Event Calendar](https://partner.steamgames.com/doc/marketing/upcoming_events).
+Чёрная пятница — ноябрьская акция, но это **не распродажа с opt-in-скидкой**: Valve планирует «highlight games doing Black Friday discounts by directing traffic to the Special Offers hub» — то есть подсвечивать игры с чёрно-пятничной скидкой и направлять на них трафик через **Special Offers hub**. <span class="stamp stamp--date">актуально на 2026-08</span> Конкретные даты и детали ещё не названы — сверяйся в [Event Calendar](https://partner.steamgames.com/doc/marketing/upcoming_events). Источник: [анонс Steamworks «события 2-й половины 2026»](https://steamcommunity.com/groups/steamworks/announcements/detail/493837645658461608) (тело анонса машинно не читается, формулировка — по [сводке GameWatcher](https://www.gamewatcher.com/steam-sale-list-2026), цитирующей анонс).
 
 <div class="cl cl-warn" markdown>
 
@@ -61,7 +61,7 @@ title: "Календарь фестивалей и распродаж 2026"
 
 ## ⚪ Прошедшие в 2026 — 1-е полугодие
 
-Оставлено для понимания ритма Steam и планирования на 2027: тематические фесты повторяются примерно в одни и те же окна год к году, поэтому прошлогодний календарь — рабочая прикидка для следующего.
+Оставлено для понимания ритма Steam: тематические фесты повторяются примерно в одни и те же окна год к году, поэтому прошлые даты — рабочая прикидка там, где официальных ещё нет. Для первой половины 2027 Valve уже назвал официальные даты — см. [ниже](#-1-е-полугодие-2027-официальные-даты).
 
 | Когда | Событие |
 |---|---|
@@ -80,6 +80,30 @@ title: "Календарь фестивалей и распродаж 2026"
 | 18–25 мая | Океанический фестиваль |
 | 8–15 июн | Фестиваль пуль (bullet heaven) |
 | 15–22 июн | Steam Next Fest (июньский) |
+
+---
+
+## 🟦 1-е полугодие 2027 (официальные даты)
+
+Официальное расписание из [Upcoming Events](https://partner.steamgames.com/doc/marketing/upcoming_events) <span class="stamp stamp--date">актуально на 2026-08</span>. Второе полугодие 2027 Valve анонсирует позже — для него пока ориентируйся на [прошедший календарь 2026](#-прошедшие-в-2026--1-е-полугодие) как на прикидку ритма.
+
+| Когда | Событие | Кому |
+|---|---|---|
+| 14–18 янв | [Desktop Companion Fest](https://partner.steamgames.com/optin/sale/desktop_companion_2027) | по тегу |
+| 25 янв – 1 фев | [Shop Keeper Fest](https://partner.steamgames.com/optin/sale/shop_keep_2027) | по тегу |
+| 4–8 фев | [Sheep Fest](https://partner.steamgames.com/optin/sale/sheep_2027) | по тегу |
+| 8–15 фев | [Couch Co-Op Fest](https://partner.steamgames.com/optin/sale/couch_coop_2027) | по тегу |
+| 22 фев – 1 мар | [Steam Next Fest](https://partner.steamgames.com/optin/sale/nextfest_feb_2027) | нерелизнутым с демо (один раз за жизнь игры) |
+| 8–15 мар | [Rhythm Fest](https://partner.steamgames.com/optin/sale/rhythm_2027) | по тегу |
+| 18–25 мар | Весенняя распродажа | релизнутым |
+| 29 мар – 5 апр | [Dinos vs Robots Fest](https://partner.steamgames.com/optin/sale/dinos_robots_2027) | по тегу |
+| 12–19 апр | [Racing Fest](https://partner.steamgames.com/optin/sale/racing_2027) | по тегу |
+| 22–26 апр | [Witch Fest](https://partner.steamgames.com/optin/sale/witch_2027) | по тегу |
+| 26 апр – 3 мая | [Fighting Fest](https://partner.steamgames.com/optin/sale/fighting_2027) | по тегу |
+| 10–17 мая | [RTS Fest](https://partner.steamgames.com/optin/sale/rts_2027) | по тегу |
+| 31 мая – 3 июн | [Mountaineering Fest](https://partner.steamgames.com/optin/sale/mountaineering_2027) | по тегу |
+| 14–21 июн | [Steam Next Fest](https://partner.steamgames.com/optin/sale/nextfest_june_2027) | нерелизнутым с демо (один раз за жизнь игры) |
+| 24 июн – 8 июл | Летняя распродажа | релизнутым |
 
 ---
 
