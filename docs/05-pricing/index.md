@@ -133,7 +133,7 @@ Valve рекомендует базовые цены по регионам на 
 </div>
 
 - При уменьшении региональной цены никаких ограничений также не возникает.
-- Уменьшать региональную цену без последствий можно даже при активной скидке, скидка не слетает.
+- <span class="stamp stamp--date">актуально на 2026-09</span> **Пока идёт скидка или она стоит в расписании, цену не поменять вообще** — ни поднять, ни опустить. Valve: «It's not possible to increase or decrease the base price of a product during an active discount, or while a discount is scheduled in the future» ([Discounting](https://partner.steamgames.com/doc/marketing/discounts)). Поставил скидку под сезонную распродажу за месяц — до её конца цены заморожены. Правь цены *до* того, как заводишь скидку.
 
 **Как изменить цену**
 
