@@ -44,8 +44,9 @@ title: "Какой банк принимает выплаты Valve"
 | Страна · Банк | Выплаты Valve | Нюанс | Детали |
 |---|:---:|---|---|
 | 🇦🇲 **Ameria, Ardshin, ACBA, Ararat** | ✅ | Принимают USD-SWIFT (корреспонденты Citibank / RBI / BNY Mellon, 2026) | [Армения →](../03-other-countries/armenia.md) |
-| 🇦🇲 **Converse, Evoca** | ❌ | Во входящей USD-цепочке Bank of Georgia — риск разворота | [Армения →](../03-other-countries/armenia.md) |
-| 🇦🇲 **IDBank** | ✅ | Сменил Bank of Georgia на Commerzbank A.G. (2026) — принимает USD и EUR, снова годится для ЮЛ/ИП; тарифы резидента без паспорта РА | [Армения →](../03-other-countries/armenia.md) |
+| 🇦🇲 **Evoca** | ❌ | Во входящей USD-цепочке Bank of Georgia — риск разворота | [Армения →](../03-other-countries/armenia.md) |
+| 🇦🇲 **Converse** | ❓ | Жёсткий AML для ИП; в 2026 добавил USD-реквизиты через Citibank и RBI, кейсов приёма выплаты Steam по ним нет (2026-09) | [Армения →](../03-other-countries/armenia.md) |
+| 🇦🇲 **IDBank** | ⚠ | Три USD-корреспондента: Commerzbank, RBI и Bank of Georgia — уточни в банке, кого указать в реквизитах, чтобы не пойти через BoG (2026-09); тарифы резидента без паспорта РА | [Армения →](../03-other-countries/armenia.md) |
 | 🇦🇲 **Ineco** | ⚠ | USD через BNY Mellon (с 2025), но риск закрытия счёта при дальнейшей релокации | [Армения →](../03-other-countries/armenia.md) |
 | 🇬🇪 **TBC, Bank of Georgia** | ✅ | Принимают SWIFT от Valve. Счёт только при личном визите | [Грузия →](../03-other-countries/georgia.md) |
 | 🇬🇪 **Basis Bank** | ⚠ | Принимает, но требует проживания 3+ месяца | [Грузия →](../03-other-countries/georgia.md) |
