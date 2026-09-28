@@ -4,7 +4,7 @@ title: "Календарь фестивалей и распродаж 2026"
 
 # Календарь фестивалей и распродаж 2026
 
-<span class="stamp stamp--date">актуально на 2026-08</span> Живой календарь Steam-событий: сезонные распродажи, Steam Next Fest и тематические фесты. Даты сверены с официальным [анонсом Steamworks](https://store.steampowered.com/news/group/4145017/view/493837645658461607). Точные даты, opt-in и условия каждого события всегда в Steamworks → [Event Calendar](https://partner.steamgames.com/doc/marketing/upcoming_events) — даты иногда двигаются, сверяйся перед планированием.
+<span class="stamp stamp--date">актуально на 2026-09</span> Живой календарь Steam-событий: сезонные распродажи, Steam Next Fest и тематические фесты. Даты сверены с официальным [анонсом Steamworks](https://store.steampowered.com/news/group/4145017/view/493837645658461607). Точные даты, opt-in и условия каждого события всегда в Steamworks → [Event Calendar](https://partner.steamgames.com/doc/marketing/upcoming_events) — даты иногда двигаются, сверяйся перед планированием.
 
 **Как читать колонку «кому»:**
 
@@ -29,17 +29,17 @@ title: "Календарь фестивалей и распродаж 2026"
 | 10–14 сен | [Фестиваль программирования](https://partner.steamgames.com/optin/sale/sale_programming_2026) | по тегу |
 | 14–21 сен | [Фестиваль групповых ролевых игр](https://partner.steamgames.com/optin/sale/sale_party_rpg_2026) | по тегу |
 | 1–8 окт | Осенняя распродажа | релизнутым |
-| 12–19 окт | [Кулинарный фестиваль](https://partner.steamgames.com/optin/sale/sale_cooking_2026) | по тегу |
+| 12–19 окт | [Кулинарный фестиваль](https://partner.steamgames.com/optin/sale/cooking_2026) | по тегу |
 | 19–26 окт | [**Steam Next Fest**](https://partner.steamgames.com/optin/sale/nextfest_october_2026) · [дедлайны](https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest/2026october) | нерелизнутым с демо (один раз за жизнь игры) |
-| 26 окт – 2 ноя | [Steam Scream: фестиваль страшных игр](https://partner.steamgames.com/optin/sale/sale_horror_2026) | по тегу |
-| 16–23 ноя | [Фестиваль авто-баттлеров](https://partner.steamgames.com/optin/sale/sale_auto_battler_2026) | по тегу |
+| 26 окт – 2 ноя | [Steam Scream: фестиваль страшных игр](https://partner.steamgames.com/optin/sale/horror_2026) | по тегу |
+| 16–23 ноя | [Фестиваль авто-баттлеров](https://partner.steamgames.com/optin/sale/auto_battler_2026) | по тегу |
 | 17 дек – 4 янв 2027 | Зимняя распродажа | релизнутым |
 
-Чёрная пятница — ноябрьская акция, но это **не распродажа с opt-in-скидкой**: Valve планирует «highlight games doing Black Friday discounts by directing traffic to the Special Offers hub» — то есть подсвечивать игры с чёрно-пятничной скидкой и направлять на них трафик через **Special Offers hub**. <span class="stamp stamp--date">актуально на 2026-08</span> Конкретные даты и детали ещё не названы — сверяйся в [Event Calendar](https://partner.steamgames.com/doc/marketing/upcoming_events). Источник: [анонс Steamworks «события 2-й половины 2026»](https://steamcommunity.com/groups/steamworks/announcements/detail/493837645658461608) (тело анонса машинно не читается, формулировка — по [сводке GameWatcher](https://www.gamewatcher.com/steam-sale-list-2026), цитирующей анонс).
+Чёрная пятница — ноябрьская акция, но это **не распродажа с opt-in-скидкой**: Valve планирует «highlight games doing Black Friday discounts by directing traffic to the Special Offers hub» — то есть подсвечивать игры с чёрно-пятничной скидкой и направлять на них трафик через **Special Offers hub**. <span class="stamp stamp--date">актуально на 2026-09</span> Конкретные даты и детали ещё не названы — сверяйся в [Event Calendar](https://partner.steamgames.com/doc/marketing/upcoming_events). Источник: [анонс Steamworks «события 2-й половины 2026»](https://steamcommunity.com/groups/steamworks/announcements/detail/493837645658461608) (тело анонса машинно не читается, формулировка — по [сводке GameWatcher](https://www.gamewatcher.com/steam-sale-list-2026), цитирующей анонс).
 
 <div class="cl cl-warn" markdown>
 
-**Ближайший жёсткий дедлайн: 31 августа 2026, 23:59 PDT — регистрация на октябрьский Next Fest.** <span class="stamp stamp--date">актуально на 2026-07</span> Демо к этой дате не нужно, нужна опубликованная страница Coming Soon и заявка. Остальные сроки феста (сбор трейлеров, Press Preview, review материалов) — в разборе [Участие в фестивалях](festivals.md#-тайминг-и-подготовка-к-next-fest).
+**Следующий Next Fest — 22 февраля – 1 марта 2027. Регистрация до 10 января 2027, 23:59 PST.** <span class="stamp stamp--date">актуально на 2026-09</span> На октябрьский фест (19–26 окт 2026) регистрация уже закрыта. Все сроки обоих выпусков — в разборе [Участие в фестивалях](festivals.md#-тайминг-и-подготовка-к-next-fest).
 
 </div>
 
@@ -85,7 +85,7 @@ title: "Календарь фестивалей и распродаж 2026"
 
 ## 🟦 1-е полугодие 2027 (официальные даты)
 
-Официальное расписание из [Upcoming Events](https://partner.steamgames.com/doc/marketing/upcoming_events) <span class="stamp stamp--date">актуально на 2026-08</span>. Второе полугодие 2027 Valve анонсирует позже — для него пока ориентируйся на [прошедший календарь 2026](#-прошедшие-в-2026--1-е-полугодие) как на прикидку ритма.
+Официальное расписание из [Upcoming Events](https://partner.steamgames.com/doc/marketing/upcoming_events) <span class="stamp stamp--date">актуально на 2026-09</span>. Второе полугодие 2027 Valve анонсирует позже — для него пока ориентируйся на [прошедший календарь 2026](#-прошедшие-в-2026--1-е-полугодие) как на прикидку ритма.
 
 | Когда | Событие | Кому |
 |---|---|---|
@@ -111,7 +111,7 @@ title: "Календарь фестивалей и распродаж 2026"
 
 <div class="cl cl-tip" markdown>
 
-Из всего календаря Next Fest — *единственный предрелизный фест, ради которого стоит подгадывать дату релиза*: он один раз за жизнь игры и даёт самый мощный буст видимости. Тематические фесты идут «по тегу» и часто берут даже ещё не вышедшие игры (Coming Soon) — это бесплатный трафик к странице, но ради них дату релиза двигать не нужно: попал по тегу — участвуй, не попал — не страшно. Сезонные распродажи — для уже вышедших игр; планируй под них холд-периоды между скидками.
+Из всего календаря Next Fest — *единственный предрелизный фест, ради которого стоит подгадывать дату релиза*: он один раз за жизнь игры и даёт самый мощный буст видимости. Тематические фесты идут «по тегу» и часто берут даже ещё не вышедшие игры (Coming Soon) — это бесплатный трафик к странице, но ради них дату релиза двигать не нужно: попал по тегу — участвуй, не попал — не страшно. Сезонные распродажи — для уже вышедших игр, и только они освобождены от 30-дневного перерыва между скидками: на сезонную можно зайти со скидкой сразу после своей. Тематические фесты этот перерыв соблюдают без исключений — хочешь зайти туда со скидкой, держи 30 дней после окончания прошлой ([Discounting](https://partner.steamgames.com/doc/marketing/discounts), [Themed Sales](https://partner.steamgames.com/doc/marketing/upcoming_events/themed_sales)).
 
 </div>
 
