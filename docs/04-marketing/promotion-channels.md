@@ -86,7 +86,7 @@ Reddit — одна из самых эффективных площадок дл
 
 | Сервис | **Цены** | **Информация** |
 |---|---|---|
-| [Keymailer](https://keymailer.co/) | От $100 | Есть подписки на рассылки, разовые рассылки и прочее. По последним данным эффективность сервиса относительно слабая. |
+| [Keymailer](https://keymailer.co/) | Есть бесплатный пробный период, цены не публичные (на 2026-09) | Есть подписки на рассылки, разовые рассылки и прочее. По последним данным эффективность сервиса относительно слабая. |
 | [Jestr](https://www.jestr.gg/) | От $5 000 | Посты через блогеров в соцсетях. |
 | [Terminals.io](https://terminals.io/) | От $2 000 | Рассылка по СМИ и блогерам на почту. Отчасти аналог Keymailer, но рассылка индивидуальная и модерируется сотрудниками агентства. |
 
@@ -103,8 +103,8 @@ PR-агентства делают рассылки по разным источ
 | [Sandbox Strategies](https://sandboxstrat.com/) |  |  |
 | [Neon Noroshi](https://www.neonnoroshi.com/) | Japan |  |
 | [Stride PR](https://www.stridepr.com/) |  | $5 000 |
-| [This is Game](https://thisisgame.com/) |  | $500 |
-| [Vicarious PR](https://www.vicariouspr.com/) |  | $7 500 |
+| [This is Game](https://thisisgame.com/) | Корейское игровое СМИ (디스이즈게임), не PR-агентство | $500 |
+| [Vicariously (бывш. Vicarious PR)](https://vicariously.agency/) |  | $7 500 |
 
 ## 📰 СМИ
 

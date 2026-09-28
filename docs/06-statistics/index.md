@@ -135,7 +135,7 @@ Steam даёт финансовые отчёты и аналитику прям�
 <div class="cl cl-tip" markdown>
 
 Рекомендуется браузерное расширение от Александра Блинцова, автора игры Furnish Master, — оно добавляет множество полезной статистики в финансовые и маркетинговые отчёты:
-[https://chromewebstore.google.com/detail/steamworks-extra-reports/cdobnjfogldjaihapojppnopiaccgpag](https://chromewebstore.google.com/detail/steamworks-extra-reports/cdobnjfogldjaihapojppnopiaccgpag)
+[Steamworks Extras (Chrome Web Store)](https://chromewebstore.google.com/detail/steamworks-extras/cdobnjfogldjaihapojppnopiaccgpag)
 
 </div>
 

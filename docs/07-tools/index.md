@@ -20,17 +20,16 @@ title: "Инструменты, полезные сервисы, сообщес�
 | [SteamTrender](https://steamtrender.com/) | Анализирует продуктивность страниц игр в Steam, включая эффективность ключей, маркетинга и трендов. |
 | [Review Explorer](https://project.joshhills.dev/steam-review-explorer) | Один из лучших инструментов анализа пользовательских отзывов. |
 | [Barter.vg (Bundles)](https://barter.vg/bundles/) | Следит за появлением и составом бандлов, особенно на Humble Bundle. |
-| [VGInsights](https://vginsights.com/) | Анализ жанров, доходов и пересечений аудиторий (платный). |
+| [Video Game Insights](https://app.sensortower.com/vgi/) | Анализ жанров, доходов и пересечений аудиторий (платный). Бывший VGInsights — теперь часть Sensor Tower, старый адрес перенаправляет сюда. |
 | [GameDiscoverCo](https://newsletter.gamediscover.co/) | Блог и аналитика по играм от Simon Carless. Полезно для понимания жанровых трендов. |
 | [Games-Popularity](https://games-popularity.com/) | Отслеживание самых ожидаемых игр по вишлистам. |
-| [Redash от SolarSuit](https://redash.solarsuit.games/) | Новинки и быстрорастущие игры в TOP WISHLISTS Steam. |
-| [BlueOcean Tag Surveyor](https://blueoceangames.shinyapps.io/steam-tag-surveyor/) | Распределение по тегам — показывает, насколько перегреты или перспективны ниши. |
+| [Redash от SolarSuit](https://redash.solarsuit.games/) | Новинки и быстрорастущие игры в TOP WISHLISTS Steam. На 2026-09 открывается страницей входа — публичного доступа нет. |
 | [BigGame Notion база](https://biggame.notion.site/) | Подборка аналитических таблиц, сравнение по жанрам и стратегии продвижения. |
 | [Flourish (пример)](https://public.flourish.studio/visualisation/20073344/) | Визуализация жанровых трендов. |
 | [Brand24](https://brand24.com/) | Анализ маркетинговых кампаний конкурентов — поиск по упоминаниям в сети. |
 | [UserInterviews](https://www.userinterviews.com/) и [Respondent.io](https://www.respondent.io/) | Подбор респондентов для глубинных интервью и опросов с целевой аудиторией. |
 | [Steam Asset Creator](https://www.steamassetcreator.com/editor) | Генератор капсул и баннеров под требования Steam. Экспериментальный, но удобный. |
-| [Steamworks Extra Reports (расширение Chrome)](https://chromewebstore.google.com/detail/steamworks-extra-reports/cdobnjfogldjaihapojppnopiaccgpag) | Показывает расширенные метрики прямо в Steamworks. Неофициальное, но полезное расширение. |
+| [Steamworks Extras (расширение Chrome, бывш. Steamworks Extra Reports)](https://chromewebstore.google.com/detail/steamworks-extras/cdobnjfogldjaihapojppnopiaccgpag) | Показывает расширенные метрики прямо в Steamworks. Неофициальное, но полезное расширение. |
 | [ezgif.com](https://ezgif.com/) | Онлайн-инструмент для конвертации и обрезки гифок из видео, подходит для страниц игр. |
 
 ## 👥 Полезные сообщества и чаты
