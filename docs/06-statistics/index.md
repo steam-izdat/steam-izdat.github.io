@@ -128,8 +128,8 @@ Steam даёт финансовые отчёты и аналитику прям�
 
 Пример такой статистики:
 
-- `Lifetime Steam revenue (gross)` — грязная выручка, включая возвраты и НДС
-- `Lifetime Steam revenue (net)` — чистая выручка, без НДС и с вычетом возвратов
+- `Lifetime Steam revenue (gross)` и `Lifetime Steam revenue (net)` — суммарная выручка за всё время. Что именно вычтено в каждой из двух подписей, у Valve не расписано <span class="stamp stamp--check">требует проверки</span>.
+- Документация Valve говорит, что суммы на сайте Sales & Activations вычетов (возвраты, чарджбэки, налоги) не включают. Реальную сумму к выплате показывает месячный отчёт ([Sales Reporting](https://partner.steamgames.com/doc/finance/payments_salesreporting), <span class="stamp stamp--date">актуально на 2026-11</span>).
 - Net Revenue — такой графы нет, это плагин для браузера, который автоматически считает, сколько примерно заработал разработчик после вычета 30%.
 
 <div class="cl cl-tip" markdown>
@@ -144,6 +144,28 @@ Steam даёт финансовые отчёты и аналитику прям�
 Каждый час, с небольшими задержками во время повышенной нагрузки на магазин Steam. При этом Steam часто сначала показывает часть продаж за текущий час, а в следующий час добавляет оставшиеся продажи за предыдущий период.
 
 > Поэтому, особенно на релизе, учитывайте, что для получения полной картины статистика обновляется примерно каждые 2 часа.
+
+### 🆕 Новые графики в финансовой отчётности
+
+<span class="stamp stamp--date">с сентября 2026</span> В графике продаж есть переключатели units / revenue и регион / страна. На странице игры появились отдельные графики внутриигровых продаж и активаций ключей, с разбивкой по регионам и странам ([анонс Valve, 01.09.2026](https://steamcommunity.com/groups/steamworks/announcements/detail/692019489711063046)).
+
+<span class="stamp stamp--date">с 11 ноября 2026</span> На странице Package Details есть дневные графики выручки и копий, сводка по скидкам и сравнение периодов: полная цена против скидки и сколько дней игра была на скидке. По ним видно, окупилась ли распродажа. Те же данные доступны через IPartnerFinancialsService API ([анонс Valve](https://steamcommunity.com/groups/steamworks/announcements/detail/689774035226066950)).
+
+Региональную разбивку вишлистов смотри в разделе Regional sales report на портале Sales & Activation Reports. Данные обновляются раз в день ([Wishlists](https://partner.steamgames.com/doc/marketing/wishlist), <span class="stamp stamp--date">актуально на 2026-11</span>).
+
+### ↩️ Возвраты
+
+Steam возвращает деньги без вопросов, если с покупки прошло меньше 14 дней и в игре наиграно меньше 2 часов ([политика возврата](https://store.steampowered.com/steam_refunds/)). Если игра проходится за 2 часа, учитывай это в цене и длине.
+
+Долю возвратов смотри в партнёрке: страница пакета, раздел Links, **Refund Data** ([дока](https://partner.steamgames.com/doc/finance/refunds)). После скидок доля возвратов обычно выше. <span class="stamp stamp--date">актуально на 2026-11</span>
+
+### 🛠 Steam Deck: FPS виден игрокам
+
+<span class="stamp stamp--date">с 11 ноября 2026</span> На странице игры в блоке Steam Deck Compatibility игрок видит средний FPS и гистограмму. У тебя тот же график лежит в Technical Tools, раздел Steam Hardware Compatibility Review. Данных нужно набрать выше минимального порога ([анонс Valve](https://steamcommunity.com/games/593110/announcements/detail/685269801333948420)). Низкий FPS виден игроку до покупки.
+
+### 📉 Рынок Steam в 2026
+
+<span class="stamp stamp--date">оценка на 2026-09</span> По исследованию weloveit.io (Totally Human Media), половина всех игр за всё время заработала меньше $3 558. У релизов 2026 года медиана около $1 728 на 1 сентября. Топ-10% игр забирают порядка 99% выручки ([Game World Observer](https://gameworldobserver.com/2026/09/01/the-median-revenue-of-games-on-steam-has-been-declining-for-12-consecutive-years)). Это модельная оценка, не данные Valve; другие методики дают другой разброс.
 
 ---
 

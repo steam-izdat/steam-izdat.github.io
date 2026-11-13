@@ -29,6 +29,8 @@ title: "Инструменты, полезные сервисы, сообщес�
 | [Brand24](https://brand24.com/) | Анализ маркетинговых кампаний конкурентов — поиск по упоминаниям в сети. |
 | [UserInterviews](https://www.userinterviews.com/) и [Respondent.io](https://www.respondent.io/) | Подбор респондентов для глубинных интервью и опросов с целевой аудиторией. |
 | [Steam Asset Creator](https://www.steamassetcreator.com/editor) | Генератор капсул и баннеров под требования Steam. Экспериментальный, но удобный. |
+| [Steam Web API: отзывы](https://partner.steamgames.com/doc/webapi/IUserReviewsService) | Старый `/appreviews` отключён 22.10.2026 ([анонс Valve](https://steamcommunity.com/groups/steamworks/announcements/detail/676258795703241581)), скрипты на нём не работают. Новый метод — `IUserReviewsService/GetAppReviews`. Ключ необязателен: с ключом приложения лимит запросов выше, анонимные ответы кэшируются до 10 минут. <span class="stamp stamp--date">актуально на 2026-11</span> |
+| [Achievement Sets (Steamworks)](https://partner.steamgames.com/doc/features/achievements/ach_guide) | Наборы ачивок (группы по режимам или DLC, архив) с 11.11.2026 работают у всех игроков; обновлять игру и SDK не нужно ([анонс Valve](https://steamcommunity.com/games/593110/announcements/detail/685269908095762672)). Путь: Edit Steamworks Settings > Stats & Achievements > Achievements. В доке пока стоит пометка «beta». <span class="stamp stamp--date">актуально на 2026-11</span> |
 | [Steamworks Extras (расширение Chrome, бывш. Steamworks Extra Reports)](https://chromewebstore.google.com/detail/steamworks-extras/cdobnjfogldjaihapojppnopiaccgpag) | Показывает расширенные метрики прямо в Steamworks. Неофициальное, но полезное расширение. |
 | [ezgif.com](https://ezgif.com/) | Онлайн-инструмент для конвертации и обрезки гифок из видео, подходит для страниц игр. |
 
@@ -45,8 +47,8 @@ title: "Инструменты, полезные сервисы, сообщес�
 
 | Название | Описание |
 |---|---|
-| [Keymailer](https://keymailer.co/) | Рассылка ключей стримерам и блогерам. Можно настроить фильтры по охвату, платформам и регионам. Подходит для инди. |
-| [Terminals.io](https://www.terminals.io/) | Премиум-сервис для богатых издателей. Более строгая модерация, высокий порог входа. |
+| [Keymailer](https://keymailer.co/) (теперь часть Partnier) | Рассылка ключей стримерам и блогерам. Можно настроить фильтры по охвату, платформам и регионам. Цены на сайте закрыты, для разработчиков заявлен пробный период. <span class="stamp stamp--date">актуально на 2026-11</span> |
+| [Terminals.io](https://www.terminals.io/) | Платная рассылка по СМИ и блогерам, модерация сотрудниками. Пакеты от $2 000 ([цены](https://services.terminals.io), <span class="stamp stamp--date">актуально на 2026-11</span>). |
 
 ## 💼 Финансовые и юридические ресурсы
 
