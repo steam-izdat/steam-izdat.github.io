@@ -148,7 +148,9 @@ extra:
 # верхние табы-категории, внутри — конкретные страницы.
 nav:
   - Главная: index.md
-  - Старт: 01-start/index.md
+  - Старт:
+      - 01-start/index.md
+      - Сроки и проверки до релиза: 01-start/timeline.md
   - Деньги и страны:
       - Куда придут деньги — обзор: banks/index.md
       - По странам:
@@ -170,15 +172,18 @@ nav:
       - Цены и финансы: 05-pricing/index.md
   - Продвижение:
       - Маркетинг: 04-marketing/index.md
+      - Календарь Steam и дата релиза: 04-marketing/calendar.md
       - Библия маркетинга: 04-marketing/marketing-bible.md
       - Каналы продвижения: 04-marketing/promotion-channels.md
       - Оформление страницы в Steam: 04-marketing/store-page.md
+      - "ИИ в игре — раскрытие и риски": 04-marketing/ai-content.md
       - Участие в фестивалях: 04-marketing/festivals.md
-      - Календарь фестивалей 2026: 04-marketing/fest-calendar.md
+      - Календарь фестивалей: 04-marketing/fest-calendar.md
       - Статистика: 06-statistics/index.md
   - Справка:
       - Инструменты и сообщества: 07-tools/index.md
       - Проблемы и ошибки: 08-problems/index.md
+      - Скам и мошенники: 08-problems/scams.md
       - Термины: 09-terms/index.md
   - Калькуляторы:
       - calc/index.md
