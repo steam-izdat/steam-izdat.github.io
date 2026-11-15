@@ -185,6 +185,7 @@ nav:
       - Проблемы и ошибки: 08-problems/index.md
       - Скам и мошенники: 08-problems/scams.md
       - Термины: 09-terms/index.md
+      - Что нового: changelog.md
   - Калькуляторы:
       - calc/index.md
       - Сколько дойдёт до счёта: calc/payout.md
