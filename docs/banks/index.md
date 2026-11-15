@@ -43,7 +43,9 @@ title: "Какой банк принимает выплаты Valve"
 
 | Страна · Банк | Выплаты Valve | Нюанс | Детали |
 |---|:---:|---|---|
-| 🇦🇲 **Ameria, Ardshin, ACBA, Ararat** | ⚠ | Принимают USD-SWIFT (корреспонденты Citibank / RBI / BNY Mellon), но кейсов приёма выплаты Steam в 2026 в сообществе нет. С 12.08.2026 банки обязаны проверять клиентов и операции на риск обхода санкций <span class="stamp stamp--date">актуально на 2026-11</span> | [Армения →](../03-other-countries/armenia.md) |
+| 🇦🇲 **Ameria, Ardshin, ACBA** | ✅ | Выплаты Steam принимают <span class="stamp stamp--date">по кейсам редакции · 2026-11</span>, USD-корреспонденты в США (Citibank / BNY Mellon; у ACBA ещё RBI) без проблем. С 12.08.2026 банки обязаны проверять клиентов и операции на риск обхода санкций <span class="stamp stamp--date">актуально на 2026-11</span> | [Армения →](../03-other-countries/armenia.md) |
+| 🇦🇲 **Ararat** | ❓ | Входящие USD через Citibank, но подтверждённых кейсов приёма выплаты Steam нет <span class="stamp stamp--date">по кейсам редакции · 2026-11</span> | [Армения →](../03-other-countries/armenia.md) |
+| 🇦🇲 **Artsakhbank** | ❌ | По кейсам сообщества с выплатами Steam были проблемы — не рекомендуется <span class="stamp stamp--date">по кейсам редакции · 2026-11</span> | [Армения →](../03-other-countries/armenia.md) |
 | 🇦🇲 **Evoca** | ⚠ | По сайту банка открывает счета нерезидентам, в том числе онлайн. Но во входящей USD-цепочке Bank of Georgia — риск разворота, кейсов приёма Steam нет <span class="stamp stamp--date">актуально на 2026-11</span> | [Армения →](../03-other-countries/armenia.md) |
 | 🇦🇲 **Converse** | ❓ | Жёсткий AML для ИП; в 2026 добавил USD-реквизиты через Citibank и RBI, кейсов приёма выплаты Steam по ним нет (2026-09) | [Армения →](../03-other-countries/armenia.md) |
 | 🇦🇲 **IDBank** | ⚠ | Три USD-корреспондента: Commerzbank, RBI и Bank of Georgia — уточни в банке, кого указать в реквизитах, чтобы не пойти через BoG (2026-09); тарифы резидента без паспорта РА | [Армения →](../03-other-countries/armenia.md) |
